@@ -10,14 +10,13 @@
   width: 100%;
   z-index: 99;
   transition: background-color 0.4s ease, box-shadow 0.4s ease;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .header-container {
   max-width: 70rem;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
   width: 100%;
   height: 100%;
   display: flex;
@@ -43,7 +42,7 @@
 
 .header-links {
   display: flex;
-  margin-left: 2rem;
+  margin-left: 4rem;
   padding-top: 0.25rem;
   list-style: none;
 }
@@ -68,39 +67,88 @@
 }
 
 .header-link{
-    margin: 0 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-weight: 600;
+    position: relative;
+    padding: 0 5px;
+}
+
+.header-link:hover::after{
+  width: 100%;
+}
+
+.header-link::after{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: -40px;
+  background-color: #fb8500;
+  width: 0%;
+  height: 3px;
+  transition: 200ms ease-in-out;
 }
 
 .header-info {
-  left: 0;
-  right: 0;
-  opacity: 0;
-  visibility: hidden;
-  position: absolute;
-  top: 6.81rem;
-  background-color: #fff;
-  border-bottom: 0.0625 rem solid #f4f3f3;
-  box-shadow: 0 0.375rem 0.9375rem 0 rgb(26 22 40 / 10%);
+  display: flex;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  justify-content: space-around;
+  padding: 2rem;
+  cursor: pointer;
+  z-index: 99;
+  background-color: white;
+}
+
+.header-info.header-home{
+  display: none;
+}
+
+.hide-header{
+  display: none;
+}
+
+.header-info p{
+  padding: 15px;
+  box-shadow: rgba(251,133,0, 0.2) 0px 0px 0px;
+  transition: 200ms ease-in-out;
+  margin: 0;
+  font-size: 0.9rem;
+  border-radius: 5px;
+}
+
+.header-info svg{
+  transform: rotate(-90deg) translateX(2px);
+}
+
+.header-info p:hover{
+  box-shadow: rgba(251,133,0, 0.2) 0px 5px 10px;
+  background-color: #fb8500;
+  color: white;
+}
+
+.header-info p:hover svg path{
+  stroke: white;
 }
 
 .header-info-open{
     visibility: visible;
-    -webkit-animation: open-nav .25s ease-out 1 forwards;
-    animation: open-nav .25s ease-out 1 forwards;
 }
 
-.header-level1{
-    position: relative;
+.header-info-section1{
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.header-service-section2{
-    position: absolute;
-    top: 0;
-    left: 10%;
+.header-services-section1{
+  display: block;
 }
 
-.header-service-section3{
-    position: absolute;
-    top: 0;
-    left: 30%;
+.header-info-section2{
+  width: 30%;
+}
+
+.header-info-section3{
+  width: 30%;
 }

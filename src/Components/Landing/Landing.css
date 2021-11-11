@@ -1,0 +1,15 @@
+.landing-page{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing-page h1{
+    font-size: 4rem;
+    color: #fb8500;
+}
+
+.landing-page img{
+    width: 50%;
+}

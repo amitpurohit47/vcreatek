@@ -1,0 +1,143 @@
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: none;
+  height: 0;
+  transition: 200ms ease-in-out;
+}
+
+.mobile-nav-top {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px 20px 10px 0;
+  align-items: center;
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.mobile-nav-top img {
+  width: 120px;
+}
+
+.mobile-nav-ham {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-nav-ham span {
+  height: 1px;
+  width: 100%;
+  background-color: #212121;
+  margin-bottom: 7px;
+  transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+.mobile-nav-ham span.ham1-open {
+  transform: rotate(45deg);
+  margin: 0;
+}
+
+.mobile-nav-ham span.ham2-open {
+  height: 0;
+  margin: 0;
+}
+
+.mobile-nav-ham span.ham3-open {
+  transform: rotate(-45deg);
+  margin: 0;
+}
+
+.mobile-container {
+  position: absolute;
+  height: 100%;
+  background-color: white;
+  width: 100%;
+  z-index: -1;
+  padding: 2rem;
+  font-family: "Open Sans", sans-serif;
+  transition: 200ms ease-in-out;
+}
+
+.mobile-container h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.mobile-container p {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobile-container h1 svg {
+  transform: rotate(90deg) translateY(10px);
+  margin-left: -5px;
+  height: 15px;
+  width: 15px;
+}
+
+.mobile-nav-open {
+  height: 100vh;
+  overflow-y: visible;
+}
+
+.mobile-container.mobile-nav-open{
+    transform: translateX(0) !important;
+    opacity: 1 !important;
+}
+
+#mobile-nav-main p svg,
+#mobile-nav-main p svg,
+#mobile-services-list p svg,
+#mobile-datacloud-list p svg,
+#mobile-web-list p svg,
+#mobile-research-list p svg,
+#mobile-smart-list p svg,
+#mobile-commercial-list p svg,
+#mobile-health-list p svg,
+#mobile-supply-list p svg,
+#mobile-design-list p svg,
+#mobile-techpartner-list p svg,
+#mobile-aboutus-list p svg{
+    transform: rotate(-90deg) translateX(-10px);
+}
+
+
+#mobile-nav-main,
+#mobile-services-list,
+#mobile-datacloud-list,
+#mobile-web-list,
+#mobile-research-list,
+#mobile-smart-list,
+#mobile-commercial-list,
+#mobile-health-list,
+#mobile-supply-list,
+#mobile-design-list,
+#mobile-techpartner-list,
+#mobile-aboutus-list {
+    transform: translateX(100%);
+    opacity: 0;
+    transition:  200ms ease-in-out;
+}
+
+#mobile-nav-main.mobile-nav-open{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#mobile-datacloud-list p{
+  margin-bottom: 0;
+  padding: 5px 10px;
+}
