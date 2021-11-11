@@ -5,7 +5,7 @@ import './Landing.css';
 const Landing = () => {
 
     const handleClick = () => {
-        document.querySelector('.header-info').classList.add('hide-header');
+        document.querySelector('.header-info').style.display = 'none';
     }
 
     return (
