@@ -3,6 +3,7 @@ import Header from './Components/Header/Header';
 import Landing from './Components/Landing/Landing';
 import MobileNav from './Components/MobileNav/MobileNav';
 import './App.css';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Switch>
           <Route path="/" exact component={() => <Landing />} />
         </Switch>
+        <Footer />
       </article>
     </BrowserRouter>
   );
