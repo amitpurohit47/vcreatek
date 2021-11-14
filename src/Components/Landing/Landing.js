@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import $ from "jquery";
 import landing from "../../Assets/Images/undraw_data_points_re_vkpq.svg";
 import homeicon1 from "../../Assets/Images/home2_icon1.png";
 import homeicon2 from "../../Assets/Images/home2_icon2.png";
@@ -9,12 +10,12 @@ import landing1 from "../../Assets/Images/landing1.jpeg";
 import quote from "../../Assets/Images/quote.png";
 import testimonial from "../../Assets/Images/testimonial.svg";
 import whychooseus from "../../Assets/Images/whychooseus.jpeg";
-import contactus1 from "../../Assets/Images/contactus1.jpg"
-import contactus2 from "../../Assets/Images/contactus2.jpg"
-import contactus3 from "../../Assets/Images/contactus3.jpg"
-import contactus4 from "../../Assets/Images/contactus4.jpg"
-import contactus5 from "../../Assets/Images/contactus5.jpg"
-import contactus6 from "../../Assets/Images/contactus6.jpg"
+import contactus1 from "../../Assets/Images/contactus1.jpg";
+import contactus2 from "../../Assets/Images/contactus2.jpg";
+import contactus3 from "../../Assets/Images/contactus3.jpg";
+import contactus4 from "../../Assets/Images/contactus4.jpg";
+import contactus5 from "../../Assets/Images/contactus5.jpg";
+import contactus6 from "../../Assets/Images/contactus6.jpg";
 import { Swiper } from "swiper/react/swiper";
 import { SwiperSlide } from "swiper/react/swiper-slide";
 import SwiperCore, { EffectCoverflow, Pagination } from "swiper";
@@ -24,9 +25,47 @@ import "./Landing.css";
 SwiperCore.use([EffectCoverflow, Pagination]);
 
 const Landing = () => {
+  let viewed = false;
+
   const handleClick = () => {
     document.querySelector(".header-info").style.display = "none";
   };
+
+  function isScrolledIntoView(elem) {
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height()+400;
+
+    var elemTop = $(elem).offset().top;
+    var elemBottom = elemTop + $(elem).height();
+
+    return elemBottom <= docViewBottom && elemTop >= docViewTop;
+  }
+
+  const handleScroll = () => {
+    if (isScrolledIntoView($(".counters-inner")) && !viewed) {
+      viewed = true;
+      $(".counter-number").each(function () {
+        $(this)
+          .prop("Counter", 0)
+          .animate(
+            {
+              Counter: $(this).text(),
+            },
+            {
+              duration: 2000,
+              easing: "swing",
+              step: function (now) {
+                $(this).text(Math.ceil(now));
+              },
+            }
+          );
+      });
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  });
 
   return (
     <div className="landing-page" onClick={handleClick}>
@@ -120,19 +159,19 @@ const Landing = () => {
           <img src={landing1} alt="landing1" />
           <div className="counters-main">
             <div className="counter">
-              <p className="counter-number">0+</p>
+              <p className="counter-number">100</p>
               <h5>TEAM SIZE</h5>
             </div>
             <div className="counter">
-              <p className="counter-number">0+</p>
+              <p className="counter-number">7</p>
               <h5>COUNTRIES SERVED</h5>
             </div>
             <div className="counter">
-              <p className="counter-number">0+</p>
+              <p className="counter-number">10</p>
               <h5>DELIGHTED CUSTOMERS</h5>
             </div>
             <div className="counter">
-              <p className="counter-number">0+</p>
+              <p className="counter-number">20</p>
               <h5>PROJECTS DELIVERED</h5>
             </div>
           </div>
