@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   height: 7rem;
-  background-color: transparent;
+  background-color: white;
   border-bottom: 0.0625rem solid transparent;
   position: absolute;
   width: 100%;
@@ -117,11 +117,29 @@
   border-radius: 5px;
 }
 
+.header-info a{
+  text-decoration: none;
+  padding: 15px;
+  box-shadow: rgba(251,133,0, 0.2) 0px 0px 0px;
+  transition: 200ms ease-in-out;
+  margin: 0;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  display: block;
+  color: black;
+}
+
 .header-info svg{
   transform: rotate(-90deg) translateX(2px);
 }
 
 .header-info p:hover{
+  box-shadow: rgba(251,133,0, 0.2) 0px 5px 10px;
+  background-color: #fb8500;
+  color: white;
+}
+
+.header-info a:hover{
   box-shadow: rgba(251,133,0, 0.2) 0px 5px 10px;
   background-color: #fb8500;
   color: white;
@@ -153,3 +171,4 @@
 .header-info-section3{
   width: 30%;
 }
+

@@ -1,0 +1,60 @@
+.smart-analytics-page{
+    padding-top: 8rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.smart-analytics-page img{
+    width: 80%;
+}
+
+.smart-analytics1{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.smart-analytics1-left{
+    width: 50%;
+    padding-left: 3rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.smart-analytics1-left h1{
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.smart-analytics1-left p{
+    margin-bottom: 10px;
+}
+
+.smart-analytics1-right{
+    width: 50%;
+}
+
+.smart-analytics2{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.smart-analytics2 h3{
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+.smart-analytics2 p{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+

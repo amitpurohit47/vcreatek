@@ -1,0 +1,119 @@
+.aboutus-page {
+  padding-top: 8rem;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.aboutus-page h1 {
+  font-size: 4rem;
+  color: rgb(116, 21, 21);
+  margin-bottom: 4rem;
+}
+
+.aboutus-page h2 {
+  font-size: 2.6rem;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+}
+
+.our-story {
+  width: 60%;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.leadership1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.leadership1-card {
+  width: 45%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.leadership1-card > div:last-child {
+  max-width: 65%;
+}
+
+.leadership1-img {
+  width: 120px;
+  height: 120px;
+  background-color: #f2f2f2;
+  margin-right: 15px;
+}
+
+.leadership2-card {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding: 60px 30px;
+}
+
+.leadership2-card-left {
+  width: 30%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+.leadership2-card-left p {
+  text-align: center;
+}
+
+.leadership2-card-left > div:first-child {
+  width: 120px;
+  height: 120px;
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
+}
+
+.leadership2-card-right {
+  width: 60%;
+}
+
+.life-vcreatek p {
+  margin-bottom: 20px;
+}
+
+.aic-mit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.aic-mit-left {
+  width: 50%;
+}
+
+.aic-mit-right {
+  width: 45%;
+}
+
+.aic-mit-right img {
+  width: 100%;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gallery-img {
+  width: 320px;
+  height: 320px;
+  background-color: #f2f2f2;
+  margin-bottom: 30px;
+}

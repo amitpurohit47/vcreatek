@@ -1,0 +1,26 @@
+.techpartners-page{
+    padding-top: 8rem;
+}
+
+.techpartners-page h1{
+    padding: 30px;
+    font-size: 4rem;
+    width: 100%;
+    background-color: #fb8500;
+    color: white;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.techpartners-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+
+.techpartners-main img{
+    width: 400px;
+}

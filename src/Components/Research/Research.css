@@ -1,0 +1,149 @@
+.researchlab-page {
+  padding-top: 8rem;
+}
+
+.researchlab1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  color: white;
+}
+.researchlab1::before {
+  position: absolute;
+  width: 100%;
+  height: 99%;
+  content: "";
+  background-color: #fb8500;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.researchlab1-left {
+  width: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.researchlab1-left h1 {
+  font-size: 3rem;
+}
+
+.researchlab1-right {
+  width: 50%;
+  position: relative;
+}
+
+.researchlab1-right img {
+  width: 100%;
+}
+
+.wave3 {
+  position: absolute;
+  height: 100%;
+  transform: rotate(270deg) scale(0.8);
+  left: -56%;
+  z-index: -1;
+  top: -2.5px;
+}
+
+.researchlab2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.researchlab2::before {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  width: 50%;
+  height: 114%;
+  top: -5px;
+  right: 0;
+  background-color: #f2f2f2;
+}
+
+.researchlab2-right {
+  width: 50%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 30px;
+}
+
+.researchlab2-right h1{
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.researchlab2-right img.wave3 {
+  left: -58%;
+  width: 100%;
+}
+
+.researchlab2-right p{
+    width: 100%;
+}
+
+.researchlab2-left {
+  width: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.researchlab2-left img {
+  width: 90%;
+  padding: 30px;
+}
+
+.researchlab-page>h1{
+    font-size: 3rem;
+    margin-top: 7rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.researchlab3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.researchlab3-left{
+    width: 50%;
+}
+
+.researchlab3-left p{
+    margin-bottom: 20px;
+}
+
+.researchlab3-right{
+    width: 30%;
+}
+
+.researchlab3-right img{
+    width: 100%;
+}
+
+.researchlab4{
+    margin: auto;
+    margin-top: 5rem;
+    width: 80%;
+
+}
+
+.researchlab4 h1{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.researchlab4 ul{
+    margin-bottom: 30px;
+}

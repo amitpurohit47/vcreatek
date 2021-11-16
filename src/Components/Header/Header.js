@@ -126,6 +126,7 @@ const Header = () => {
 
   const [sectiondata2, setSectiondata2] = useState([]);
   const [sectiondata3, setSectiondata3] = useState([]);
+  const [section2link, setSection2link] = useState("");
 
   const data3 = [
     {
@@ -167,7 +168,16 @@ const Header = () => {
     },
   ];
 
+  const links = ["/data-cloud", "/webapp", "/research-lab"];
+  const seclinks = {
+    "About Us": "/about",
+    "Technological Partners": "/technological-partners",
+    "Design Studio": "/design-studio",
+  };
+
   useEffect(() => {}, [activeLink]);
+
+  console.log(activeLink.linkname);
 
   return (
     <nav className="header">
@@ -244,46 +254,90 @@ const Header = () => {
           } header-info-section1`}
         >
           {sectiondata1 &&
-            sectiondata1.map((item, i) => (
-              <p
-                key={`section1.${i}`}
-                onClick={() => {
-                  setSectiondata2(
-                    activeLink.subdata.find((str) => str.subdataName === item)
-                      ?.subdataList
-                  );
-                  if (item !== "Smart Analytics") setSectiondata3([]);
-                }}
-              >
-                {item}
-                {activeLink.linkname === "Services" && (
-                  <svg
-                    width="11"
-                    height="6"
-                    fill="none"
-                    viewBox="0 0 11 6"
-                    aria-hidden="true"
-                    focusable="false"
-                    className="header-svg-container"
-                  >
-                    <path
-                      stroke="#1A1628"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="1.5"
-                      d="M10.006.75l-4.41 4.41a.308.308 0 0 1-.436 0L.75.75"
-                    ></path>
-                  </svg>
-                )}
-              </p>
-            ))}
+            sectiondata1.map((item, i) =>
+              activeLink.linkname === "About Us" ||
+              activeLink.linkname === "Technological Partners" ||
+              activeLink.linkname === "Design Studio" ? (
+                <Link
+                  to={seclinks[activeLink.linkname]}
+                  key={`section1.${i}`}
+                  onClick={() => {
+                    setSectiondata2(
+                      activeLink.subdata.find((str) => str.subdataName === item)
+                        ?.subdataList
+                    );
+                    if (item !== "Smart Analytics") setSection2link(links[i]);
+                    if (item !== "Smart Analytics") setSectiondata3([]);
+                  }}
+                >
+                  {item}
+                  {activeLink.linkname === "Services" && (
+                    <svg
+                      width="11"
+                      height="6"
+                      fill="none"
+                      viewBox="0 0 11 6"
+                      aria-hidden="true"
+                      focusable="false"
+                      className="header-svg-container"
+                    >
+                      <path
+                        stroke="#1A1628"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="1.5"
+                        d="M10.006.75l-4.41 4.41a.308.308 0 0 1-.436 0L.75.75"
+                      ></path>
+                    </svg>
+                  )}
+                </Link>
+              ) : (
+                <p
+                  key={`section1.${i}`}
+                  onClick={() => {
+                    setSectiondata2(
+                      activeLink.subdata.find((str) => str.subdataName === item)
+                        ?.subdataList
+                    );
+                    if (item !== "Smart Analytics") setSection2link(links[i]);
+                    if (item !== "Smart Analytics") setSectiondata3([]);
+                  }}
+                >
+                  {item}
+                  {activeLink.linkname === "Services" && (
+                    <svg
+                      width="11"
+                      height="6"
+                      fill="none"
+                      viewBox="0 0 11 6"
+                      aria-hidden="true"
+                      focusable="false"
+                      className="header-svg-container"
+                    >
+                      <path
+                        stroke="#1A1628"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="1.5"
+                        d="M10.006.75l-4.41 4.41a.308.308 0 0 1-.436 0L.75.75"
+                      ></path>
+                    </svg>
+                  )}
+                </p>
+              )
+            )}
         </div>
         {activeLink.linkname === "Services" && (
           <div className="header-info-section2">
             {sectiondata2 !== null && typeof sectiondata2[0] === "string"
-              ? sectiondata2.map((item, i) => (
-                  <p key={`section2.${i}`}>{item}</p>
-                ))
+              ? sectiondata2.map((item, i) => {
+                  document.querySelector(".header-info").style.display = "none";
+                  return (
+                    <Link to={`${section2link}`} key={`section2.${i}`}>
+                      {item}
+                    </Link>
+                  );
+                })
               : sectiondata2.map((item, i) => (
                   <p
                     key={`section2.${i}`}
@@ -316,7 +370,16 @@ const Header = () => {
         {activeLink.linkname === "Services" && (
           <div className="header-info-section3">
             {sectiondata3.map((item, i) => (
-              <p key={`section3.${i}`}>{item}</p>
+              <Link
+                to="/smart-analytics"
+                key={`section3.${i}`}
+                onClick={() =>
+                  (document.querySelector(".header-info").style.display =
+                    "none")
+                }
+              >
+                {item}
+              </Link>
             ))}
           </div>
         )}

@@ -1,0 +1,212 @@
+import React from "react";
+import aicmit from "../../Assets/Images/aicmit.jpeg";
+import "./About.css";
+
+const About = () => {
+  return (
+    <div className="aboutus-page">
+      <h1>About vCreaTek</h1>
+      <h2>Our Story</h2>
+      <p className="our-story">
+        It all started with an idea of providing Data consulting services with a
+        team of five people, which today is a 150+ employees organization. After
+        quitting L&T Infotech, and leaving behind his family business in
+        Calcutta, Abhishek founded vCreaTek Consulting Services in 2014
+      </p>
+      <p className="our-story">
+        There was nothing but an idea that was nurtured in a way that today
+        vCreaTek Consulting Services provides Healthcare Analytics Services,
+        Consulting Services, Tech & IT Services, and even Academic Mentorship
+        Programs to its clientele that hold a huge share in their respective
+        markets.
+      </p>
+      <h2>Leadership</h2>
+      <div className="leadership">
+        <div className="leadership1">
+          <div className="leadership1-card">
+            <div className="leadership1-img"></div>
+            <div>
+              <h3>Abhishek Rathi</h3>
+              <p>Founder & CEO</p>
+            </div>
+          </div>
+          <div className="leadership1-card">
+            <div className="leadership1-img"></div>
+            <div>
+              <h3>Abhishek Tawde</h3>
+              <p>Director, Operations & Admin</p>
+            </div>
+          </div>
+          <div className="leadership1-card">
+            <div className="leadership1-img"></div>
+            <div>
+              <h3>Irwing D’Souza</h3>
+              <p> Director, Innovation & Emerging Technology</p>
+            </div>
+          </div>
+          <div className="leadership1-card">
+            <div className="leadership1-img"></div>
+            <div>
+              <h3>Rakesh Tibude</h3>
+              <p> Director, Service Engineering & Delivery</p>
+            </div>
+          </div>
+        </div>
+        <div className="leadership2">
+          <div className="leadership2-card">
+            <div className="leadership2-card-left">
+              <div></div>
+              <h3>Harish Gowtham</h3>
+              <p>Director, Technical Operations & Training</p>
+            </div>
+            <div className="leadership2-card-right">
+              <p>
+                Harish Gowtham M is Director of Technical Operations, vCreaTek.
+                Harish, who is the first recruit of the company in 2014, has
+                provided data analytics services around domains like
+                Pharmaceutical, Home warranty, Metal Trading Industry and
+                Retail. He became director of the company in the year 2017.
+              </p>
+              <p>
+                He played a key role in digital transformation of Belchina LLC,
+                Dubai during 2014 – 2015, which helped him gain knowledge of
+                various aspects to run a company. From 2016-2021, he has been
+                indulged in various domains BI project deliverables. He is well
+                known for his problem-solving abilities, understanding of
+                business-to-data relationship and for his BI technical skills
+              </p>
+              <p>
+                Prior to joining vCreaTek he worked for LTI and Accion labs.
+                Harish received a bachelor’s degree in mechanical engineering
+                from the Anna University of Tirunelveli. He is from Tamil Nadu
+                and can speak Tamil, English and Hindi.
+              </p>
+            </div>
+          </div>
+          <div className="leadership2-card">
+            <div className="leadership2-card-left">
+              <div></div>
+              <h3>Namita Chimulkar</h3>
+              <p>Associate Director, Customer Success Partner</p>
+            </div>
+            <div className="leadership2-card-right">
+              <p>
+                Namita Chimulkar is the Associate Director, Customer Success
+                Partner at vCreaTek. An effective communicator with strong
+                analytical, problem-solving & organizational abilities, Namita
+                likes to contribute to the exciting technological advances
+                within the organization.
+              </p>
+              <p>
+                With a decade of experience in Business Analysis, Project
+                management, Namita acquired skillset like SQL, Agile frameworks,
+                UML, requirement elicitation, interpreting & analyzing data,
+                Data warehousing, Data modelling & Data Visualization. She is
+                currently looking after the technological stack including Looker
+                & Snowflake.
+              </p>
+              <p>
+                Namita did her Engineering from RIT -Goa university with a
+                Bachelor of Engineering in Electronics & Telecommunication. You
+                can find the curious soul wandering places, travelling, reading,
+                listening to her favorite playlists, cooking as well as watching
+                sports
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2>Life @vCreaTek</h2>
+      <div className="life-vcreatek">
+          <p>
+            Yes, we develop technology. But you can also find us doing yoga,
+            meditation, mandala art, working on new ideas, learning new skills and a
+            lot more at our workplace, during our work hours. vCreaTek strongly
+            believes in empowering its employees through helping them acquire
+            knowledge and upskill themselves in order to stay relevant in the highly
+            competitive and rapidly evolving market
+          </p>
+          <p style={{ fontWeight: "700" }}>
+            “Our Employees are our Brand Ambassadors”
+          </p>
+          <p>
+            “We Create Technology” for our customers and “We Create Memories” for
+            our brand ambassadors.
+          </p>
+          <p>
+            <span style={{ fontWeight: "700" }}>- Leadership Meet –</span> A one day
+            event at Lonavala on 3rd September 2021. An interactive meet where
+            Directors and TLs from all the teams had insightful discussions on
+            teams, projects, and the overall picture of the organisation.
+          </p>
+          <p>
+            <span style={{ fontWeight: "700" }}>- Family Day Event –</span> A one
+            day event at Lonavala on 3rd September 2021. An interactive meet where
+            Directors and TLs from all the teams had insightful discussions on
+            teams, projects, and the overall picture of the organisation.
+          </p>
+          <p>
+            <span style={{ fontWeight: "700" }}>- Superfit @4 –</span> The casual
+            connect between all the employees over Zoom on 23rd July 2021 celebrated
+            success of different teams along with fun games.
+          </p>
+          <p>
+            <span style={{ fontWeight: "700" }}>- Back to Work Campaign –</span>
+            An attempt to celebrate women workforce at vCreaTek, the campaign is all
+            about the value that our army of super-efficient female employees being
+            in along with managing end number of things at home.
+          </p>
+          <p>
+            <span style={{ fontWeight: "700" }}>- Newsletters –</span> Keep yourself
+            updated with our monthly newsletter.
+          </p>
+          <p>
+            <span style={{ fontWeight: "700" }}>
+              - CSR - Oxygen Concentrators Donation (2021) –
+            </span>{" "}
+            During the unprecedented times of COVID, as part of our Corporate Social
+            Responsibility, vCreaTek donated Oxygen Concentrators in Pune.
+          </p>
+      </div>
+      <h2>AIC MIT Incubation</h2>
+      <div className="aic-mit">
+        <div className="aic-mit-left">
+          <p>
+            VCREATEK CONSULTING SERVICES PRIVATE LIMITED is an Incubatee at
+            AIC-MIT ADT Incubator Forum since 27 July 2019. The Incubatee having
+            been engaged in Data Analytics & Information Management Services for
+            last 4 years and are currently developing an integrated physical
+            commodity trading’s platform for the SME traders to use trusted
+            marketplace, documentation and financial services features to
+            connect globally and bring in better margin to their business, has
+            approached incubator for an admission at incubator.
+          </p>
+          <p>
+            Mr. Abhishek Rathi, Founder & CEO vCreaTek Consulting Services Pvt
+            Ltd. has been engaged with other AIC-MIT ADT Incubator Forum
+            activities apart from his own incubation journey as a start-up. He
+            has been an integral part as a mentor for business advisory to other
+            incubated start-ups based on his domain expertise. He also has been
+            actively participating and mentoring sessions related to ATL (Atal
+            Tinkering Lab) activities as a super mentor conducted since his
+            incubation.
+          </p>
+        </div>
+        <div className="aic-mit-right">
+            <img src={aicmit} alt="aicmit" />
+        </div>
+      </div>
+      <h2>Gallery</h2>
+      <div className="gallery">
+          <div className="gallery-img"></div>
+          <div className="gallery-img"></div>
+          <div className="gallery-img"></div>
+          <div className="gallery-img"></div>
+          <div className="gallery-img"></div>
+          <div className="gallery-img"></div>
+      </div>
+    </div>
+  );
+};
+
+export default About;

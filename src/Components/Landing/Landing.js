@@ -33,7 +33,7 @@ const Landing = () => {
 
   function isScrolledIntoView(elem) {
     var docViewTop = $(window).scrollTop();
-    var docViewBottom = docViewTop + $(window).height()+400;
+    var docViewBottom = docViewTop + $(window).height() + 400;
 
     var elemTop = $(elem).offset().top;
     var elemBottom = elemTop + $(elem).height();
@@ -65,7 +65,10 @@ const Landing = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-  });
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <div className="landing-page" onClick={handleClick}>

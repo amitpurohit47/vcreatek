@@ -1,0 +1,147 @@
+.data-cloud-page {
+  padding-top: 8rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.data-cloud-page1{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.data-cloud-left{
+    width: 50%;
+    position: relative;
+}
+
+.wave1{
+    position: absolute;
+    height: 100%;
+    transform: rotate(270deg);
+    left: 39%;
+    width: 100px;
+}
+
+.data-cloud-right{
+    width: 50%;
+    background-color: #ffc801;
+    height: 100%;
+}
+
+.data-cloud-page1::before{
+    position: absolute;
+    height: 99.5%;
+    background-color: #ffc801;
+    top: 2px;
+    right: 0;
+    width: 50%;
+    content: '';
+    z-index: -1;
+}
+
+.data-cloud-right h1{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.data-cloud-page1 img{
+    width: 100%;
+}
+
+.services-main {
+  display: flex;
+  width: 80%;
+  box-shadow: 0 2px 37px 0 rgb(0 0 0 / 10%);
+  -webkit-box-shadow: 0 2px 37px 0 rgb(0 0 0 / 10%);
+  margin-top: 6rem;
+}
+
+.services-left {
+  background-color: #242582;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  transform: translate(-30px, -30px);
+  padding: 20px;
+  box-shadow: 0 2px 37px 0 rgb(0 0 0 / 10%);
+  -webkit-box-shadow: 0 2px 37px 0 rgb(0 0 0 / 10%);
+  max-width: 350px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-left p {
+  font-size: 1.3rem;
+  padding: 15px;
+  width: 300px;
+  cursor: pointer;
+}
+
+.services-left .service-active {
+  width: 400px;
+  background-color: #fb8500;
+  box-shadow: 0 2px 37px 0 rgb(0 0 0 / 10%);
+  -webkit-box-shadow: 0 2px 37px 0 rgb(0 0 0 / 10%);
+  position: relative;
+}
+
+.services-right {
+  padding: 3rem;
+}
+
+.services-right h1 {
+  font-size: 2.8rem;
+  font-family: "Ubuntu", sans-serif;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.services-right h1::after {
+  position: absolute;
+  content: "";
+  width: 10%;
+  height: 5px;
+  left: 0;
+  bottom: -20px;
+  background-color: #fb8500;
+}
+
+.services-right > p {
+  font-family: "Saira", sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.service-bullets {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service-bullets p {
+  display: inline-block;
+  width: 50%;
+  font-size: 1.2rem;
+  padding: 10px;
+  font-family: "Saira", sans-serif;
+  position: relative;
+}
+
+.service-bullets p::after {
+  position: absolute;
+  content: "";
+  top: 43%;
+  left: -5px;
+  background-color: #242582;
+  width: 6px;
+  height: 6px;
+}
+
+.services-carousel {
+  display: none;
+}
