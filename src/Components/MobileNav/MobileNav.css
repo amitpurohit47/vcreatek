@@ -83,6 +83,15 @@
   justify-content: space-between;
 }
 
+.mobile-container a{
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  padding: 10px;
+  display: block;
+}
+
 .mobile-container h1 svg {
   transform: rotate(90deg) translateY(10px);
   margin-left: -5px;

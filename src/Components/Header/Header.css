@@ -10,7 +10,7 @@
   width: 100%;
   z-index: 99;
   transition: background-color 0.4s ease, box-shadow 0.4s ease;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   box-shadow: 0px 10px 40px 0px rgb(47 47 47 / 10%);
 }
 
@@ -63,25 +63,30 @@
   flex-flow: row-reverse;
 }
 
-.header-svg-container{
-    margin-left: 5px;
+.header-svg-container {
+  margin-left: 5px;
 }
 
-.header-link{
-    margin: 0 10px;
-    cursor: pointer;
-    font-weight: 600;
-    position: relative;
-    padding: 0 5px;
+.header-link {
+  margin: 0 10px;
+  cursor: pointer;
+  font-weight: 600;
+  position: relative;
+  padding: 0 5px;
 }
 
-.header-link:hover::after{
+a.header-link {
+  text-decoration: none;
+  color: black;
+}
+
+.header-link:hover::after {
   width: 100%;
 }
 
-.header-link::after{
+.header-link::after {
   position: absolute;
-  content: '';
+  content: "";
   left: 0;
   bottom: -40px;
   background-color: #fb8500;
@@ -100,27 +105,27 @@
   background-color: white;
 }
 
-.header-info.header-home{
+.header-info.header-home {
   display: none;
 }
 
-.hide-header{
+.hide-header {
   display: none;
 }
 
-.header-info p{
+.header-info p {
   padding: 15px;
-  box-shadow: rgba(251,133,0, 0.2) 0px 0px 0px;
+  box-shadow: rgba(251, 133, 0, 0.2) 0px 0px 0px;
   transition: 200ms ease-in-out;
   margin: 0;
   font-size: 0.9rem;
   border-radius: 5px;
 }
 
-.header-info a{
+.header-info a {
   text-decoration: none;
   padding: 15px;
-  box-shadow: rgba(251,133,0, 0.2) 0px 0px 0px;
+  box-shadow: rgba(251, 133, 0, 0.2) 0px 0px 0px;
   transition: 200ms ease-in-out;
   margin: 0;
   font-size: 0.9rem;
@@ -129,46 +134,45 @@
   color: black;
 }
 
-.header-info svg{
+.header-info svg {
   transform: rotate(-90deg) translateX(2px);
 }
 
-.header-info p:hover{
-  box-shadow: rgba(251,133,0, 0.2) 0px 5px 10px;
+.header-info p:hover {
+  box-shadow: rgba(251, 133, 0, 0.2) 0px 5px 10px;
   background-color: #fb8500;
   color: white;
 }
 
-.header-info a:hover{
-  box-shadow: rgba(251,133,0, 0.2) 0px 5px 10px;
+.header-info a:hover {
+  box-shadow: rgba(251, 133, 0, 0.2) 0px 5px 10px;
   background-color: #fb8500;
   color: white;
 }
 
-.header-info p:hover svg path{
+.header-info p:hover svg path {
   stroke: white;
 }
 
-.header-info-open{
-    visibility: visible;
+.header-info-open {
+  visibility: visible;
 }
 
-.header-info-section1{
+.header-info-section1 {
   width: 30%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.header-services-section1{
+.header-services-section1 {
   display: block;
 }
 
-.header-info-section2{
+.header-info-section2 {
   width: 30%;
 }
 
-.header-info-section3{
+.header-info-section3 {
   width: 30%;
 }
-

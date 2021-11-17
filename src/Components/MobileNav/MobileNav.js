@@ -51,7 +51,7 @@ const MobileNav = () => {
         </div>
       </div>
       <div id="mobile-nav-main" className="mobile-container">
-        <p>Home</p>
+        <Link to="/" onClick={toggleOpen}>Home</Link>
         <p onClick={() => openMenu("mobile-services-list")}>
           Services
           <svg
@@ -132,8 +132,8 @@ const MobileNav = () => {
             ></path>
           </svg>
         </p>
-        <p>Careers</p>
-        <p>Contact Us</p>
+        <Link to="/careers" onClick={toggleOpen}>Careers</Link>
+        <Link to="/contact" onClick={toggleOpen}>Contact Us</Link>
       </div>
       <div id="mobile-services-list" className="mobile-container">
         <h1 onClick={() => closeMenu("mobile-services-list")}>
@@ -256,15 +256,15 @@ const MobileNav = () => {
           </svg>
           Data & Cloud Services
         </h1>
-        <p>BI Audit</p>
-        <p>Data Visualization</p>
-        <p>Data Governance</p>
-        <p>Data Lake</p>
-        <p>Master Data Management</p>
-        <p>Analytics & Insight Competency Centre(CoE)</p>
-        <p>Cloud & Mobile BI</p>
-        <p>Big Data</p>
-        <p>Text & Semantic Analytics</p>
+        <Link to="/data-cloud" onClick={toggleOpen}>BI Audit</Link>
+        <Link to="/data-cloud" onClick={toggleOpen}>Data Visualization</Link>
+        <Link to="/data-cloud" onClick={toggleOpen}>Data Governance</Link>
+        <Link to="/data-cloud" onClick={toggleOpen}>Data Lake</Link>
+        <Link to="/data-cloud" onClick={toggleOpen}>Master Data Management</Link>
+        <Link to="/data-cloud" onClick={toggleOpen}>Analytics & Insight Competency Centre(CoE)</Link>
+        <Link to="/data-cloud" onClick={toggleOpen}>Cloud & Mobile BI</Link>
+        <Link to="/data-cloud" onClick={toggleOpen}>Big Data</Link>
+        <Link to="/data-cloud" onClick={toggleOpen}>Text & Semantic Analytics</Link>
       </div>
       <div id="mobile-web-list" className="mobile-container">
         <h1 onClick={() => closeMenu("mobile-web-list")}>
@@ -286,10 +286,10 @@ const MobileNav = () => {
           </svg>
           Web Application Services
         </h1>
-        <p>Full Stack Development</p>
-        <p>Application & Support Maintainance</p>
-        <p>Testing & Automation</p>
-        <p>Integration & API Development</p>
+        <Link to="/webapp" onClick={toggleOpen}>Full Stack Development</Link>
+        <Link to="/webapp" onClick={toggleOpen}>Application & Support Maintainance</Link>
+        <Link to="/webapp" onClick={toggleOpen}>Testing & Automation</Link>
+        <Link to="/webapp" onClick={toggleOpen}>Integration & API Development</Link>
       </div>
       <div id="mobile-research-list" className="mobile-container">
         <h1 onClick={() => closeMenu("mobile-research-list")}>
@@ -311,9 +311,9 @@ const MobileNav = () => {
           </svg>
           Research & Lab
         </h1>
-        <p>Blockchain</p>
-        <p>Quantum Computing</p>
-        <p>Products- ROGERS,FOSHAN</p>
+        <Link to="/research-lab" onClick={toggleOpen}>Blockchain</Link>
+        <Link to="/research-lab" onClick={toggleOpen}>Quantum Computing</Link>
+        <Link to="/research-lab" onClick={toggleOpen}>Products- ROGERS,FOSHAN</Link>
       </div>
       <div id="mobile-smart-list" className="mobile-container">
         <h1 onClick={() => closeMenu("mobile-smart-list")}>
@@ -417,12 +417,12 @@ const MobileNav = () => {
           </svg>
           Commercial Analytics
         </h1>
-        <p>Sales & Market Forecasting</p>
-        <p>Business Intelligence</p>
-        <p>Market Sizing & Opportunity Analysis</p>
-        <p>Insights & Data Analytics</p>
-        <p>Augmented Consulting Services</p>
-        <p>Sales Force Effectiveness Analytics</p>
+        <Link to="/smart-analytics" onClick={toggleOpen}>Sales & Market Forecasting</Link>
+        <Link to="/smart-analytics" onClick={toggleOpen}>Business Intelligence</Link>
+        <Link to="/smart-analytics" onClick={toggleOpen}>Market Sizing & Opportunity Analysis</Link>
+        <Link to="/smart-analytics" onClick={toggleOpen}>Insights & Data Analytics</Link>
+        <Link to="/smart-analytics" onClick={toggleOpen}>Augmented Consulting Services</Link>
+        <Link to="/smart-analytics" onClick={toggleOpen}>Sales Force Effectiveness Analytics</Link>
       </div>
       <div id="mobile-health-list" className="mobile-container">
         <h1 onClick={() => closeMenu("mobile-health-list")}>
@@ -444,11 +444,11 @@ const MobileNav = () => {
           </svg>
           Healthcare Analytics Service
         </h1>
-        <p>Lifecycle Management Forecasting</p>
-        <p>Business Development & Licensing Forecast</p>
-        <p>Market Sizing & Opportunity Forecast</p>
-        <p>Insight & Data Analytics</p>
-        <p>SFE & Omnichannel Analytics</p>
+        <Link to="/smart-analytics" onClick={toggleOpen}>Lifecycle Management Forecasting</Link>
+        <Link to="/smart-analytics" onClick={toggleOpen}>Business Development & Licensing Forecast</Link>
+        <Link to="/smart-analytics" onClick={toggleOpen}>Market Sizing & Opportunity Forecast</Link>
+        <Link to="/smart-analytics" onClick={toggleOpen}>Insight & Data Analytics</Link>
+        <Link to="/smart-analytics" onClick={toggleOpen}>SFE & Omnichannel Analytics</Link>
       </div>
       <div id="mobile-supply-list" className="mobile-container">
         <h1 onClick={() => closeMenu("mobile-supply-list")}>
@@ -470,13 +470,13 @@ const MobileNav = () => {
           </svg>
           Supply Chain Management
         </h1>
-        <p>Vendor</p>
-        <p>Planning</p>
-        <p>Buying</p>
-        <p>Warehouse & Logistics</p>
-        <p>Multichannel Operations</p>
-        <p>Merchandizing</p>
-        <p>Customers</p>
+        <Link to="/smart-analytics" onClick={toggleOpen}>Vendor</Link>
+        <Link to="/smart-analytics" onClick={toggleOpen}>Planning</Link>
+        <Link to="/smart-analytics" onClick={toggleOpen}>Buying</Link>
+        <Link to="/smart-analytics" onClick={toggleOpen}>Warehouse & Logistics</Link>
+        <Link to="/smart-analytics" onClick={toggleOpen}>Multichannel Operations</Link>
+        <Link to="/smart-analytics" onClick={toggleOpen}>Merchandizing</Link>
+        <Link to="/smart-analytics" onClick={toggleOpen}>Customers</Link>
       </div>
       <div id="mobile-design-list" className="mobile-container">
         <h1 onClick={() => closeMenu("mobile-design-list")}>
@@ -498,8 +498,8 @@ const MobileNav = () => {
           </svg>
           Design Studio
         </h1>
-        <p>Application UI,UX</p>
-        <p>Industrial Product Design</p>
+        <Link to="/design-studio">Application UI,UX</Link>
+        <Link to="/design-studio">Industrial Product Design</Link>
       </div>
       <div id="mobile-techpartner-list" className="mobile-container">
         <h1 onClick={() => closeMenu("mobile-techpartner-list")}>
@@ -521,11 +521,11 @@ const MobileNav = () => {
           </svg>
           Technology Partners
         </h1>
-        <p>Erwin</p>
-        <p>Snowflake</p>
-        <p>Looker</p>
-        <p>UiPath</p>
-        <p>Rapidminer</p>
+        <Link to="/technological-partners" onClick={toggleOpen}>Erwin</Link>
+        <Link to="/technological-partners" onClick={toggleOpen}>Snowflake</Link>
+        <Link to="/technological-partners" onClick={toggleOpen}>Looker</Link>
+        <Link to="/technological-partners" onClick={toggleOpen}>UiPath</Link>
+        <Link to="/technological-partners" onClick={toggleOpen}>Rapidminer</Link>
       </div>
       <div id="mobile-aboutus-list" className="mobile-container">
         <h1 onClick={() => closeMenu("mobile-aboutus-list")}>
@@ -547,12 +547,12 @@ const MobileNav = () => {
           </svg>
           About Us
         </h1>
-        <p>Core Values</p>
-        <p>Our Story</p>
-        <p>Leadership</p>
-        <p>Life @vCreaTek</p>
-        <p>AIC Incubator</p>
-        <p>Gallery</p>
+        <Link to="/about" onClick={toggleOpen}>Core Values</Link>
+        <Link to="/about" onClick={toggleOpen}>Our Story</Link>
+        <Link to="/about" onClick={toggleOpen}>Leadership</Link>
+        <Link to="/about" onClick={toggleOpen}>Life @vCreaTek</Link>
+        <Link to="/about" onClick={toggleOpen}>AIC Incubator</Link>
+        <Link to="/about" onClick={toggleOpen}>Gallery</Link>
       </div>
     </div>
   );

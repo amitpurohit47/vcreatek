@@ -173,11 +173,12 @@ const Header = () => {
     "About Us": "/about",
     "Technological Partners": "/technological-partners",
     "Design Studio": "/design-studio",
+    "Home" : "/",
+    "Careers" : "/careers",
+    "Contact Us" : "/contact"
   };
 
   useEffect(() => {}, [activeLink]);
-
-  console.log(activeLink.linkname);
 
   return (
     <nav className="header">
@@ -188,10 +189,24 @@ const Header = () => {
               <img src={logo} alt="logo" />
             </Link>
           </div>
-          <ul className="header-links">
+          <div className="header-links">
             {data.map((item, i) => {
-              return (
-                <li
+              return item.subdata===undefined ? (
+                <Link
+                  to={seclinks[item.linkname]}
+                  className="header-link"
+                  key={`link${i}`}
+                  onClick={(e) => {
+                    const ele = document.querySelector(".header-info");
+                    setActiveLink(data[i]);
+                    ele.style.display = 'none';
+                  }}
+                >
+                  {item.linkname}
+                  
+                </Link>
+              ) : (
+                <p
                   className="header-link"
                   key={`link${i}`}
                   onClick={(e) => {
@@ -234,10 +249,10 @@ const Header = () => {
                       ></path>
                     </svg>
                   ) : null}
-                </li>
+                </p>
               );
             })}
-          </ul>
+          </div>
         </div>
       </div>
       <div
@@ -262,10 +277,9 @@ const Header = () => {
                   to={seclinks[activeLink.linkname]}
                   key={`section1.${i}`}
                   onClick={() => {
-                    setSectiondata2(
-                      activeLink.subdata.find((str) => str.subdataName === item)
-                        ?.subdataList
-                    );
+                    document.querySelector(".header-info").style.display =
+                      "none";
+                    setSectiondata2([]);
                     if (item !== "Smart Analytics") setSection2link(links[i]);
                     if (item !== "Smart Analytics") setSectiondata3([]);
                   }}
@@ -331,9 +345,17 @@ const Header = () => {
           <div className="header-info-section2">
             {sectiondata2 !== null && typeof sectiondata2[0] === "string"
               ? sectiondata2.map((item, i) => {
-                  document.querySelector(".header-info").style.display = "none";
                   return (
-                    <Link to={`${section2link}`} key={`section2.${i}`}>
+                    <Link
+                      to={`${section2link}`}
+                      key={`section2.${i}`}
+                      onClick={() => {
+                        document.querySelector(".header-info").style.display =
+                          "none";
+                        setSectiondata2([]);
+                        setSectiondata3([]);
+                      }}
+                    >
                       {item}
                     </Link>
                   );
@@ -373,10 +395,11 @@ const Header = () => {
               <Link
                 to="/smart-analytics"
                 key={`section3.${i}`}
-                onClick={() =>
-                  (document.querySelector(".header-info").style.display =
-                    "none")
-                }
+                onClick={() => {
+                  document.querySelector(".header-info").style.display = "none";
+                  setSectiondata2([]);
+                  setSectiondata3([]);
+                }}
               >
                 {item}
               </Link>

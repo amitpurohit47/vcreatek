@@ -4,7 +4,12 @@ import "./About.css";
 
 const About = () => {
   return (
-    <div className="aboutus-page">
+    <div
+      className="aboutus-page"
+      onClick={() =>
+        (document.querySelector(".header-info").style.display = "none")
+      }
+    >
       <h1>About vCreaTek</h1>
       <h2>Our Story</h2>
       <p className="our-story">
@@ -118,55 +123,55 @@ const About = () => {
       </div>
       <h2>Life @vCreaTek</h2>
       <div className="life-vcreatek">
-          <p>
-            Yes, we develop technology. But you can also find us doing yoga,
-            meditation, mandala art, working on new ideas, learning new skills and a
-            lot more at our workplace, during our work hours. vCreaTek strongly
-            believes in empowering its employees through helping them acquire
-            knowledge and upskill themselves in order to stay relevant in the highly
-            competitive and rapidly evolving market
-          </p>
-          <p style={{ fontWeight: "700" }}>
-            “Our Employees are our Brand Ambassadors”
-          </p>
-          <p>
-            “We Create Technology” for our customers and “We Create Memories” for
-            our brand ambassadors.
-          </p>
-          <p>
-            <span style={{ fontWeight: "700" }}>- Leadership Meet –</span> A one day
-            event at Lonavala on 3rd September 2021. An interactive meet where
-            Directors and TLs from all the teams had insightful discussions on
-            teams, projects, and the overall picture of the organisation.
-          </p>
-          <p>
-            <span style={{ fontWeight: "700" }}>- Family Day Event –</span> A one
-            day event at Lonavala on 3rd September 2021. An interactive meet where
-            Directors and TLs from all the teams had insightful discussions on
-            teams, projects, and the overall picture of the organisation.
-          </p>
-          <p>
-            <span style={{ fontWeight: "700" }}>- Superfit @4 –</span> The casual
-            connect between all the employees over Zoom on 23rd July 2021 celebrated
-            success of different teams along with fun games.
-          </p>
-          <p>
-            <span style={{ fontWeight: "700" }}>- Back to Work Campaign –</span>
-            An attempt to celebrate women workforce at vCreaTek, the campaign is all
-            about the value that our army of super-efficient female employees being
-            in along with managing end number of things at home.
-          </p>
-          <p>
-            <span style={{ fontWeight: "700" }}>- Newsletters –</span> Keep yourself
-            updated with our monthly newsletter.
-          </p>
-          <p>
-            <span style={{ fontWeight: "700" }}>
-              - CSR - Oxygen Concentrators Donation (2021) –
-            </span>{" "}
-            During the unprecedented times of COVID, as part of our Corporate Social
-            Responsibility, vCreaTek donated Oxygen Concentrators in Pune.
-          </p>
+        <p>
+          Yes, we develop technology. But you can also find us doing yoga,
+          meditation, mandala art, working on new ideas, learning new skills and
+          a lot more at our workplace, during our work hours. vCreaTek strongly
+          believes in empowering its employees through helping them acquire
+          knowledge and upskill themselves in order to stay relevant in the
+          highly competitive and rapidly evolving market
+        </p>
+        <p style={{ fontWeight: "700" }}>
+          “Our Employees are our Brand Ambassadors”
+        </p>
+        <p>
+          “We Create Technology” for our customers and “We Create Memories” for
+          our brand ambassadors.
+        </p>
+        <p>
+          <span style={{ fontWeight: "700" }}>- Leadership Meet –</span> A one
+          day event at Lonavala on 3rd September 2021. An interactive meet where
+          Directors and TLs from all the teams had insightful discussions on
+          teams, projects, and the overall picture of the organisation.
+        </p>
+        <p>
+          <span style={{ fontWeight: "700" }}>- Family Day Event –</span> A one
+          day event at Lonavala on 3rd September 2021. An interactive meet where
+          Directors and TLs from all the teams had insightful discussions on
+          teams, projects, and the overall picture of the organisation.
+        </p>
+        <p>
+          <span style={{ fontWeight: "700" }}>- Superfit @4 –</span> The casual
+          connect between all the employees over Zoom on 23rd July 2021
+          celebrated success of different teams along with fun games.
+        </p>
+        <p>
+          <span style={{ fontWeight: "700" }}>- Back to Work Campaign –</span>
+          An attempt to celebrate women workforce at vCreaTek, the campaign is
+          all about the value that our army of super-efficient female employees
+          being in along with managing end number of things at home.
+        </p>
+        <p>
+          <span style={{ fontWeight: "700" }}>- Newsletters –</span> Keep
+          yourself updated with our monthly newsletter.
+        </p>
+        <p>
+          <span style={{ fontWeight: "700" }}>
+            - CSR - Oxygen Concentrators Donation (2021) –
+          </span>{" "}
+          During the unprecedented times of COVID, as part of our Corporate
+          Social Responsibility, vCreaTek donated Oxygen Concentrators in Pune.
+        </p>
       </div>
       <h2>AIC MIT Incubation</h2>
       <div className="aic-mit">
@@ -193,17 +198,17 @@ const About = () => {
           </p>
         </div>
         <div className="aic-mit-right">
-            <img src={aicmit} alt="aicmit" />
+          <img src={aicmit} alt="aicmit" />
         </div>
       </div>
       <h2>Gallery</h2>
       <div className="gallery">
-          <div className="gallery-img"></div>
-          <div className="gallery-img"></div>
-          <div className="gallery-img"></div>
-          <div className="gallery-img"></div>
-          <div className="gallery-img"></div>
-          <div className="gallery-img"></div>
+        <div className="gallery-img"></div>
+        <div className="gallery-img"></div>
+        <div className="gallery-img"></div>
+        <div className="gallery-img"></div>
+        <div className="gallery-img"></div>
+        <div className="gallery-img"></div>
       </div>
     </div>
   );

@@ -3,6 +3,8 @@
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  overflow-x: hidden;
+  position: relative;
 }
 
 .aboutus-page h1 {
@@ -29,6 +31,19 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 30px;
+  position: relative;
+}
+
+.leadership1::before{
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  content: '';
+  z-index: -1;
+  background-color: #fb8500;
+  opacity: 0.1;
+  top: 100px;
+  border-radius: 100%;
 }
 
 .leadership1-card {
@@ -38,6 +53,7 @@
   align-items: center;
   padding: 30px;
   margin-bottom: 30px;
+  background-color: white;
 }
 
 .leadership1-card > div:last-child {
@@ -58,6 +74,7 @@
   justify-content: space-between;
   margin-bottom: 30px;
   padding: 60px 30px;
+  background-color: white;
 }
 
 .leadership2-card-left {
@@ -82,6 +99,25 @@
   width: 60%;
 }
 
+.life-vcreatek{
+  position: relative;
+}
+
+.life-vcreatek::before{
+  position: absolute;
+  width: 0; 
+  height: 0; 
+  border-left: 250px solid transparent;
+  border-right: 250px solid transparent;
+  border-bottom: 250px solid #fb8500;
+  opacity: 0.1;
+  z-index: -1;
+  top: 30%;
+  right: 20%;
+  content: '';
+  transform: rotate(30deg);
+}
+
 .life-vcreatek p {
   margin-bottom: 20px;
 }
@@ -90,6 +126,20 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+}
+
+.aic-mit::before{
+  width: 50vw;
+  height: 200px;
+  transform: rotate(-30deg);
+  position: absolute;
+  content: '';
+  z-index: -1;
+  background-color: red;
+  opacity: 0.1;
+  border-radius: 200px;
+  right: -10%;
 }
 
 .aic-mit-left {
@@ -116,4 +166,16 @@
   height: 320px;
   background-color: #f2f2f2;
   margin-bottom: 30px;
+}
+
+.aboutus-page:before {
+  position: absolute;
+  content: "";
+  top: -100px;
+  right: -100px;
+  width: 50vw;
+  height: 50vh;
+  background: #fb8500;
+  transform: rotate(45deg) scale(1.5);
+  z-index: -1;
 }
