@@ -16,6 +16,16 @@ import contactus3 from "../../Assets/Images/contactus3.jpg";
 import contactus4 from "../../Assets/Images/contactus4.jpg";
 import contactus5 from "../../Assets/Images/contactus5.jpg";
 import contactus6 from "../../Assets/Images/contactus6.jpg";
+import belchina from "../../Assets/Images/BELCHINA.jpg";
+import blueorbit from "../../Assets/Images/BlueOrbitSolutions.png";
+import flycloud from "../../Assets/Images/flycloud.png";
+import frontdoor from "../../Assets/Images/frontdoor.png";
+import future from "../../Assets/Images/futuregroup.jpg";
+import ict from "../../Assets/Images/ICT.jpg";
+import jnj from "../../Assets/Images/JnJ.png";
+import pwc from "../../Assets/Images/PwC.png";
+import qlik from "../../Assets/Images/Qlik.png";
+import techm from "../../Assets/Images/techmahindra.png";
 import { Swiper } from "swiper/react/swiper";
 import { SwiperSlide } from "swiper/react/swiper-slide";
 import SwiperCore, { EffectCoverflow, Pagination } from "swiper";
@@ -185,12 +195,36 @@ const Landing = () => {
       <div className="clients">
         <h1>Our Clients</h1>
         <div className="clients-main">
-          <div className="client"></div>
-          <div className="client"></div>
-          <div className="client"></div>
-          <div className="client"></div>
-          <div className="client"></div>
-          <div className="client"></div>
+          <div className="client">
+            <img src={belchina} alt="client" />
+          </div>
+          <div className="client">
+            <img src={blueorbit} alt="client" />
+          </div>
+          <div className="client">
+            <img src={ict} alt="client" />
+          </div>
+          <div className="client">
+            <img src={pwc} alt="client" />
+          </div>
+          <div className="client">
+            <img src={techm} alt="client" />
+          </div>
+          <div className="client">
+            <img src={qlik} alt="client" />
+          </div>
+          <div className="client">
+            <img src={jnj} alt="client" />
+          </div>
+          <div className="client">
+            <img src={future} alt="client" />
+          </div>
+          <div className="client">
+            <img src={flycloud} alt="client" />
+          </div>
+          <div className="client">
+            <img src={frontdoor} alt="client" />
+          </div>
         </div>
       </div>
       <div className="testimonials">
