@@ -85,10 +85,14 @@
 .researchlab2-right img.wave3 {
   left: -58%;
   width: 100%;
+  transform: rotate(270deg) scale(0.96);
+  height: 72%;
 }
 
 .researchlab2-right p{
     width: 100%;
+    line-height: 1.7;
+    text-align: justify;
 }
 
 .researchlab2-left {
@@ -121,6 +125,7 @@
 
 .researchlab3-left p{
     margin-bottom: 20px;
+    line-height: 1.7;
 }
 
 .researchlab3-right{
@@ -146,4 +151,14 @@
 
 .researchlab4 ul{
     margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.researchlab4 p{
+  text-align: justify;
+  line-height: 1.7;
+}
+
+.researchlab4 li{
+  margin-bottom: 5px;
 }

@@ -200,6 +200,7 @@ const Header = () => {
                     const ele = document.querySelector(".header-info");
                     setActiveLink(data[i]);
                     ele.style.display = 'none';
+                    window.scrollTo(0,0);
                   }}
                 >
                   {item.linkname}
@@ -209,7 +210,7 @@ const Header = () => {
                 <p
                   className="header-link"
                   key={`link${i}`}
-                  onClick={(e) => {
+                  onMouseOver={(e) => {
                     const ele = document.querySelector(".header-info");
                     setActiveLink(data[i]);
                     if (
@@ -282,6 +283,7 @@ const Header = () => {
                     setSectiondata2([]);
                     if (item !== "Smart Analytics") setSection2link(links[i]);
                     if (item !== "Smart Analytics") setSectiondata3([]);
+                    window.scrollTo(0,0);
                   }}
                 >
                   {item}
@@ -308,7 +310,7 @@ const Header = () => {
               ) : (
                 <p
                   key={`section1.${i}`}
-                  onClick={() => {
+                  onMouseOver={() => {
                     setSectiondata2(
                       activeLink.subdata.find((str) => str.subdataName === item)
                         ?.subdataList
@@ -354,6 +356,7 @@ const Header = () => {
                           "none";
                         setSectiondata2([]);
                         setSectiondata3([]);
+                        window.scrollTo(0,0);
                       }}
                     >
                       {item}
@@ -363,7 +366,7 @@ const Header = () => {
               : sectiondata2.map((item, i) => (
                   <p
                     key={`section2.${i}`}
-                    onClick={() => {
+                    onMouseOver={() => {
                       setSectiondata3(data3[i].list);
                     }}
                   >
@@ -399,6 +402,7 @@ const Header = () => {
                   document.querySelector(".header-info").style.display = "none";
                   setSectiondata2([]);
                   setSectiondata3([]);
+                  window.scrollTo(0,0);
                 }}
               >
                 {item}

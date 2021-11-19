@@ -11,7 +11,7 @@ const Webapp = () => {
   return (
     <div
       className="web-app-page"
-      onClick={() =>
+      onMouseOver={() =>
         (document.querySelector(".header-info").style.display = "none")
       }
     >
@@ -26,20 +26,61 @@ const Webapp = () => {
       </div>
       <div className="web-app2">
         <div className="web-app2-card">
-          <h1>Full Stack Development</h1>
-          <img src={stack} alt="" />
+          <div className="card-inner">
+            <div className="front">
+              <h1>Full Stack Development</h1>
+              <img src={stack} alt="card" />
+            </div>
+            <div className="back">
+              <p>
+                We provide Full Stack Development Services on various
+                technologies including Angular, React, Dot Net, Python, and Java
+              </p>
+            </div>
+          </div>
         </div>
         <div className="web-app2-card">
-          <h1>Application Support & Maintenance</h1>
-          <img src={maintenance} alt="" />
+          <div className="card-inner">
+            <div className="front">
+              <h1>Application Support & Maintenance</h1>
+              <img src={maintenance} alt="card" />
+            </div>
+            <div className="back">
+              <p>
+                We provide Application Support & Maintenance Services on various
+                technologies including Angular, React, Dot Net, Python, and Java
+              </p>
+            </div>
+          </div>
         </div>
         <div className="web-app2-card">
-          <h1>Testing & Automation</h1>
-          <img src={agile} alt="" />
+          <div className="card-inner">
+            <div className="front">
+              <h1>Testing & Automation</h1>
+              <img src={agile} alt="card" />
+            </div>
+            <div className="back">
+              <p>
+                Simplify your business with our Testing and Automation Services.
+                We provide Testing & Automation Services using Selenium.
+              </p>
+            </div>
+          </div>
         </div>
         <div className="web-app2-card">
-          <h1>Integration & API Development</h1>
-          <img src={api} alt="" />
+          <div className="card-inner">
+            <div className="front">
+              <h1>Integration & API Development</h1>
+              <img src={api} alt="card" />
+            </div>
+            <div className="back">
+              <p>
+                Our team of expert API Developers uses latest technologies
+                including Angular, React, Dot Net, Python, Note JS, Dot Net API,
+                and Java.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -26,6 +26,7 @@ const MobileNav = () => {
         .classList.add("mobile-nav-open");
     }
     setIsOpen((prev) => !prev);
+    window.scrollTo(0,0);
   };
 
   const openMenu = (name) => {

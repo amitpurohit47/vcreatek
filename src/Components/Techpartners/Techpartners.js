@@ -10,7 +10,7 @@ const Techpartners = () => {
   return (
     <div
       className="techpartners-page"
-      onClick={() =>
+      onMouseOver={() =>
         (document.querySelector(".header-info").style.display = "none")
       }
     >

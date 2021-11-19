@@ -9,7 +9,7 @@ const Research = () => {
   return (
     <div
       className="researchlab-page"
-      onClick={() =>
+      onMouseOver={() =>
         (document.querySelector(".header-info").style.display = "none")
       }
     >

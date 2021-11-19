@@ -73,7 +73,7 @@ const Landing = () => {
   }, []);
 
   return (
-    <div className="landing-page" onClick={handleClick}>
+    <div className="landing-page" onMouseOver={handleClick}>
       <div className="landing-main">
         <h1>We are VCreaTek</h1>
         <img src={landing} alt="landing" />

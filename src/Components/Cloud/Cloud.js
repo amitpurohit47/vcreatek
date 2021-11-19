@@ -7,48 +7,39 @@ const Cloud = () => {
   const serviceInfo = [
     {
       name: "BI Audit",
-      info: "We offer full-range QA and testing outsourcing services, can help to develop your QA or enhance the existing one, assist you in TCoE setup and evolution. We perform end-to-end testing of mobile, web and desktop application at each stage of the development lifecycle.",
-      bullets: ["aaaaaaa", "bbbbbbbb", "cccccccc", "dddddddddd", "eeeeeeeee"],
+      info: "Our BI Audit technologies can help you find the problematic aspects of your business. With BI Audit reports, you can analyze data to find actionable insights which will help your business achieve newer dimensions.",
     },
     {
       name: "Data Visualization",
-      info: "The development of reliable and scalable software solutions for any OS, browser and device. We bring together deep industry expertise and the latest IT advancements to deliver custom solutions and products that perfectly fit the needs and behavior of their users.",
-      bullets: ["aaaaaaa", "bbbbbbbb", "cccccccc", "dddddddddd", "eeeeeeeee"],
+      info: "With the help of our latest data visualization technologies, not only will you get a clearer picture of figures but, it will also simplify the process of analyzing and interpreting complex reports that are an essential part for any business’s growth.",
     },
     {
       name: "Data Governance",
-      info: "The full set of services around development and maintenance of complex business-critical applications. Our experts build, test, deploy, protect, manage, migrate and optimize enterprise-scale digital solutions ensuring they’re always up and running and achieve the optimal TCO.",
-      bullets: ["aaaaaaa", "bbbbbbbb", "cccccccc", "dddddddddd", "eeeeeeeee"],
+      info: "Our data governance services can help you manage, safeguard, document, and audit your data. The collection of processes, roles, policies, standards, and metrics, Data Governance ensure an effective and efficient use of information in enabling your organization to achieve its goals.",
     },
     {
       name: "Data Lake",
-      info: "User experience and user interface design for all types of websites, SaaS, and web/mobile apps. We combine the latest UI/UX trends with our customers’ individual goals and needs to deliver intuitive, vibrant, and impactful designs that power up businesses.",
-      bullets: ["aaaaaaa", "bbbbbbbb", "cccccccc", "dddddddddd", "eeeeeeeee"],
+      info: "The Data Lake service at vCreaTek helps you keep the data safe and sorted. Our central repository of data, and data lake systems are capable of including structured data (rows and columns), semi-structured data (CSV, logs, XML, JSON), unstructured data (emails, documents, PDFs) as well as binary data (images, audio, video) for the convenience of our customers.",
     },
     {
       name: "Master Data Management",
-      info: "The full set of services around development and maintenance of complex business-critical applications. Our experts build, test, deploy, protect, manage, migrate and optimize enterprise-scale digital solutions ensuring they’re always up and running and achieve the optimal TCO.",
-      bullets: ["aaaaaaa", "bbbbbbbb", "cccccccc", "dddddddddd", "eeeeeeeee"],
+      info: "With the help of our Master Data Management technologies, you can maintain uniformity, accuracy, consistency, and accountability for your master data. Businesses work in collaboration with the information technology to manage the master data.",
     },
     {
       name: "Analytics & Insight Competency Centre(CoE)",
-      info: "Our experts can help to develop and implement an effective IT strategy, assist in smooth digital transformation and system integration as well as advise on improvements to your digital customer experience.",
-      bullets: ["aaaaaaa", "bbbbbbbb", "cccccccc", "dddddddddd", "eeeeeeeee"],
+      info: "Our Analytics and Data Competency tools can help you with any aspect of data analytics. From creating business intelligence solutions to demonstrate technical capabilities, at vCreaTek, you can find a solution for all your data related requirements",
     },
     {
       name: "Cloud & Mobile BI",
-      info: "We support businesses in achieving fact-based decision-making by converting their historical and real-time, traditional and big data into actionable insights. Our services are tailored to make the raw data and the environment ready, as well as strengthen the business with advanced analytics capabilities.",
-      bullets: ["aaaaaaa", "bbbbbbbb", "cccccccc", "dddddddddd", "eeeeeeeee"],
+      info: "Cloud services means services that are mobile friendly. Our Cloud & Mobile BI services understand the amplifying need of cloud applications and hence we are committed to provide you the latest technologies that gives you deeper business insights that too, on your mobile screens.",
     },
     {
       name: "Big Data",
-      info: "Help desk services for your IT environment or software products. We take on solving diverse issues from answering application functionality questions to performing fixes and enhancements on the code level for improved adoption of software, its smooth functioning and increased end user satisfaction.",
-      bullets: ["aaaaaaa", "bbbbbbbb", "cccccccc", "dddddddddd", "eeeeeeeee"],
+      info: "With our latest set of technologies, you can stop worrying about the voluminous data coming in. Our high-end systems are capable of providing simplified ways for data management",
     },
     {
       name: "Text & Semantic Analytics",
-      info: "We apply our 10-year experience to offer a full set of infrastructure services. Being ISO 2700 certified allows us to guarantee that we access our customers' without creating any security risks or vulnerabilities.",
-      bullets: ["aaaaaaa", "bbbbbbbb", "cccccccc", "dddddddddd", "eeeeeeeee"],
+      info: " vCreaTek’s smart Text & Semantic Analysis helps your business solve crucial problems. With the help of most modern technologies, we are committed to provide you the best solutions for any kind of unstructured, raw text.",
     },
   ];
 
@@ -56,11 +47,6 @@ const Cloud = () => {
     <div className="services-right">
       <h1>{service.name}</h1>
       <p>{service.info}</p>
-      <div className="service-bullets">
-        {service.bullets.map((bullet, i) => (
-          <p key={`bullet${i}`}>{bullet}</p>
-        ))}
-      </div>
     </div>
   ));
 
@@ -69,7 +55,7 @@ const Cloud = () => {
   return (
     <div
       className="data-cloud-page"
-      onClick={() =>
+      onMouseOver={() =>
         (document.querySelector(".header-info").style.display =
           "none")
       }
@@ -100,11 +86,6 @@ const Cloud = () => {
         <div className="services-right">
           <h1>{currService.name}</h1>
           <p>{currService.info}</p>
-          <div className="service-bullets">
-            {currService.bullets.map((bullet, i) => (
-              <p key={`bullet${i}`}>{bullet}</p>
-            ))}
-          </div>
         </div>
       </div>
       <div className="services-carousel">{items}</div>

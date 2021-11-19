@@ -295,20 +295,30 @@
     text-align: justify ;
   }
   .leadership1-card{
-    width: 100% !important;
+    width: 98% !important;
     padding: 10px !important;
+  }
+  .leadership1-card h3{
+    font-size: 1rem;
+  }
+  .leadership1-card p{
+    font-size: 0.9rem;
   }
   .aboutus-page{
     width: 90% !important;
   }
+  .leadership1{
+    justify-content: center !important;
+  }
   .leadership1-card > div:last-child{
-    min-width: 55% !important;
+    max-width: 50% !important;
   }
   .leadership1-card p{
     text-align: left;
   }
   .leadership2-card{
     flex-flow: column;
+    padding: 60px 10px !important;
   }
   .leadership2-card-left{
     width: 100% !important;
@@ -330,5 +340,49 @@
   }
   .aic-mit-left{
     width: 100% !important;
+  }
+  .gallery::before{
+    display: none;
+  }
+  .gallery{
+    min-height: 50vh !important;
+  }
+  .image-gallery{
+    width: 90% !important;
+  }
+  .aic-mit::before{
+    display: none;
+  }
+  .services-right > p{
+    font-size: 1rem !important;
+    text-align: justify !important;
+  }
+  .card-inner{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  .front,.back{
+    position: relative !important;
+    margin-bottom: 20px;
+  }
+  .back{
+    transform: rotateY(0) !important;
+  }
+  .web-app2-card{
+    height: 400px !important;
+  }
+  .web-app2-card:hover .card-inner{
+    transform: rotateY(0) !important;
+  }
+  .career{
+    margin: 0 !important;
+    margin-bottom: 20px !important;
+  }
+  .careers-page h1{
+    padding: 4rem 2rem !important;
+    font-size: 3rem !important;
   }
 }

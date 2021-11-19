@@ -6,7 +6,7 @@ const Smart = () => {
   return (
     <div
       className="smart-analytics-page"
-      onClick={() =>
+      onMouseOver={() =>
         (document.querySelector(".header-info").style.display = "none")
       }
     >

@@ -1,12 +1,67 @@
 import React from "react";
 import aicmit from "../../Assets/Images/aicmit.jpeg";
+import ImageGallery from 'react-image-gallery';
+import gallery1 from "../../Assets/Images/1.jpg"
+import gallery2 from "../../Assets/Images/2.jpg"
+import gallery3 from "../../Assets/Images/3.jpg"
+import gallery4 from "../../Assets/Images/4.jpg"
+import gallery5 from "../../Assets/Images/5.jpg"
+import gallery7 from "../../Assets/Images/7.jpg"
+import gallery8 from "../../Assets/Images/8.jpg"
+import gallery9 from "../../Assets/Images/9.jpg"
+import gallery10 from "../../Assets/Images/10.jpg"
+import gallery12 from "../../Assets/Images/12.jpg"
 import "./About.css";
 
 const About = () => {
+
+  const images = [
+    {
+      original: gallery1,
+      thumbnail: gallery1,
+    },
+    {
+      original: gallery2,
+      thumbnail: gallery2,
+    },
+    {
+      original: gallery3,
+      thumbnail: gallery3,
+    },
+    {
+      original: gallery4,
+      thumbnail: gallery4,
+    },
+    {
+      original: gallery5,
+      thumbnail: gallery5,
+    },
+    {
+      original: gallery7,
+      thumbnail: gallery7,
+    },
+    {
+      original: gallery8,
+      thumbnail: gallery8,
+    },
+    {
+      original: gallery9,
+      thumbnail: gallery9,
+    },
+    {
+      original: gallery10,
+      thumbnail: gallery10,
+    },
+    {
+      original: gallery12,
+      thumbnail: gallery12,
+    },
+  ];
+
   return (
     <div
       className="aboutus-page"
-      onClick={() =>
+      onMouseOver={() =>
         (document.querySelector(".header-info").style.display = "none")
       }
     >
@@ -202,13 +257,9 @@ const About = () => {
         </div>
       </div>
       <h2>Gallery</h2>
+
       <div className="gallery">
-        <div className="gallery-img"></div>
-        <div className="gallery-img"></div>
-        <div className="gallery-img"></div>
-        <div className="gallery-img"></div>
-        <div className="gallery-img"></div>
-        <div className="gallery-img"></div>
+        <ImageGallery items={images} />
       </div>
     </div>
   );
