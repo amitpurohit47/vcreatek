@@ -1,9 +1,47 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import cloud from "../../Assets/Images/cloud.jpg";
 import wave1 from "../../Assets/Images/wave1.svg";
+import $ from "jquery";
 import "./Cloud.css";
 
 const Cloud = () => {
+
+  useEffect(() => {
+    let viewed = false;
+    function isScrolledIntoView(elem) {
+      var docViewTop = $(window).scrollTop();
+      var docViewBottom = docViewTop + $(window).height() + 400;
+
+      var elemTop = $(elem).offset().top;
+      var elemBottom = elemTop + $(elem).height();
+
+      return elemBottom <= docViewBottom && elemTop >= docViewTop;
+    }
+
+    const handleScroll = () => {
+      if (isScrolledIntoView($(".counters-inner")) && !viewed) {
+        viewed = true;
+        $(".counter-number").each(function () {
+          $(this)
+            .prop("Counter", 0)
+            .animate(
+              {
+                Counter: $(this).text(),
+              },
+              {
+                duration: 2000,
+                easing: "swing",
+                step: function (now) {
+                  $(this).text(Math.ceil(now));
+                },
+              }
+            );
+        });
+      }
+    };
+    window.removeEventListener("scroll", handleScroll);
+  });
+
   const serviceInfo = [
     {
       name: "BI Audit",

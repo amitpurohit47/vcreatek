@@ -296,7 +296,6 @@ const Landing = () => {
         </div>
       </div>
       <div className="why-choose-us2">
-        <img src={testimonial} alt="testimonial" />
         <img src={whychooseus} alt="whychooseus" />
         <div className="why-choose-us2-inner">
           <h4>WHY CHOOSE US</h4>

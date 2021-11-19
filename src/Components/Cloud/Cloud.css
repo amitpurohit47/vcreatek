@@ -1,55 +1,55 @@
 .data-cloud-page {
-  padding-top: 8rem;
+  padding-top: 5rem;
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
 }
 
-.data-cloud-page1{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-around;
-    position: relative;
+.data-cloud-page1 {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
 }
 
-.data-cloud-left{
-    width: 39%;
-    position: relative;
+.data-cloud-left {
+  width: 39%;
+  position: relative;
 }
 
-.wave1{
-    position: absolute;
-    height: 100%;
-    transform: rotate(270deg);
-    left: 61%;
-    width: 100px;
+.wave1 {
+  position: absolute;
+  height: 100%;
+  transform: rotate(270deg);
+  left: 61%;
+  width: 100px;
 }
 
-.data-cloud-right{
-    width: 50%;
-    height: 100%;
+.data-cloud-right {
+  width: 50%;
+  height: 100%;
 }
 
-.data-cloud-page1::before{
-    position: absolute;
-    height: 99.5%;
-    background-color: #ffc801;
-    top: 2px;
-    right: 0;
-    width: 50%;
-    content: '';
-    z-index: -1;
+.data-cloud-page1::before {
+  position: absolute;
+  height: 99.5%;
+  background-color: #ffc801;
+  top: 2px;
+  right: 0;
+  width: 50%;
+  content: "";
+  z-index: -1;
 }
 
-.data-cloud-right h1{
-    text-align: center;
-    font-size: 3rem;
+.data-cloud-right h1 {
+  text-align: center;
+  font-size: 3rem;
 }
 
-.data-cloud-page1 img{
-    width: 100%;
+.data-cloud-page1 img {
+  width: 100%;
 }
 
 .services-main {
@@ -61,7 +61,7 @@
 }
 
 .services-left {
-  background-color: #F3541E;
+  background-color: #f3541e;
   color: white;
   font-family: "Ubuntu", sans-serif;
   transform: translate(-30px, -30px);
@@ -84,7 +84,7 @@
 
 .services-left .service-active {
   width: 400px;
-  background-color: #F47E29;
+  background-color: #f47e29;
   box-shadow: 0 2px 37px 0 rgb(0 0 0 / 10%);
   -webkit-box-shadow: 0 2px 37px 0 rgb(0 0 0 / 10%);
   position: relative;
@@ -108,7 +108,7 @@
   height: 5px;
   left: 0;
   bottom: -20px;
-  background-color: #F47E29;
+  background-color: #f47e29;
 }
 
 .services-right > p {

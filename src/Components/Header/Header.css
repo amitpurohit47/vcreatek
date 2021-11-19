@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 7rem;
+  height: 5rem;
   background-color: white;
   border-bottom: 0.0625rem solid transparent;
   width: 100%;
@@ -35,7 +35,7 @@
 }
 
 .header-logo-container img {
-  width: 160%;
+  width: 140%;
   object-fit: contain;
   text-align: center;
 }
@@ -87,7 +87,7 @@ a.header-link {
   position: absolute;
   content: "";
   left: 0;
-  bottom: -40px;
+  bottom: -25px;
   background-color: #fb8500;
   width: 0%;
   height: 3px;
@@ -113,7 +113,7 @@ a.header-link {
 }
 
 .header-info p {
-  padding: 15px;
+  padding: 10px;
   box-shadow: rgba(251, 133, 0, 0.2) 0px 0px 0px;
   transition: 200ms ease-in-out;
   margin: 0;
@@ -123,7 +123,7 @@ a.header-link {
 
 .header-info a {
   text-decoration: none;
-  padding: 15px;
+  padding: 10px;
   box-shadow: rgba(251, 133, 0, 0.2) 0px 0px 0px;
   transition: 200ms ease-in-out;
   margin: 0;

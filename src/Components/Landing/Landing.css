@@ -278,7 +278,7 @@ input[type="radio"]#section4:checked ~ .cover {
   flex-flow: column;
   align-items: center;
   justify-content: center;
-  padding: 4rem 0;
+  padding: 6rem 0;
 }
 
 .landing-counters h4 {
@@ -295,7 +295,7 @@ input[type="radio"]#section4:checked ~ .cover {
 }
 
 .counters-inner img {
-  width: 60%;
+  width: 50%;
 }
 
 .counters-main {
@@ -328,7 +328,7 @@ input[type="radio"]#section4:checked ~ .cover {
 }
 
 .clients {
-  padding: 3rem;
+  padding: 0 3rem;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -467,15 +467,10 @@ input[type="radio"]#section4:checked ~ .cover {
   justify-content: center;
 }
 
-.why-choose-us2 img:first-child{
-  width: 100%;
-  position: absolute;
-  transform: rotateX(180deg) translateY(110px) rotate(10deg) scale(1.5);
-  top: 0;
-}
 
-.why-choose-us2 img:nth-child(2){
-  margin-top: 250px;
+.why-choose-us2{
+  margin-top: 6rem;
+  margin-bottom: 6rem;
 }
 
 .why-choose-us2-inner{
@@ -483,7 +478,8 @@ input[type="radio"]#section4:checked ~ .cover {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  margin-top: 250px;
+  margin-top: 6rem;
+  padding: 0 7rem;
 }
 
 .why-choose-us2-inner h1{
