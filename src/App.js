@@ -11,6 +11,7 @@ import About from './Components/About/About';
 import Techpartners from './Components/Techpartners/Techpartners';
 import Careers from './Components/Careers/Careers';
 import './App.css';
+import Contact from './Components/Contact/Contact';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/about" exact component={() => <About />} />
           <Route path="/technological-partners" exact component={() => <Techpartners />} />
           <Route path="/careers" exact component={() => <Careers />} />
+          <Route path="/contact" exact component={() => <Contact />} />
         </Switch>
         <Footer />
       </article>

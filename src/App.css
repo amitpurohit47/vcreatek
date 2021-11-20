@@ -385,4 +385,41 @@
     padding: 4rem 2rem !important;
     font-size: 3rem !important;
   }
+  .image-gallery-slide{
+    height: 200px !important;
+  }
+  .careers-main{
+    width: 90% !important;
+  }
+  .career{
+    width: 100% !important;
+  }
+  .contact p {
+    text-align: center;
+  }
+  .contact {
+    margin-top: 30px;
+  }
+  .contact-form {
+    width: 90%;
+  }
+  .contact-form h2 {
+    text-align: center;
+  }
+  .contact-btn {
+    padding: 5px;
+    font-size: 1.2rem;
+  }
+  .contact-us form{
+    width: 90% !important;
+    padding: 1.5rem !important;
+  }
+  .form-row{
+    flex-flow: column;
+    margin-bottom: 0 !important;
+  }
+  .form-field{
+    width: 100% !important;
+    margin-bottom: 20px !important;
+  }
 }

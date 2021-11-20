@@ -1,0 +1,107 @@
+.contact-us {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10vh;
+    margin-bottom: 30px;
+  }
+  
+  .contact-us h2 {
+    font-weight: 700;
+    font-size: 3rem;
+    margin-top: 30px;
+  }
+  
+  .contact-us h3{
+      color: #f3541e;
+      margin-bottom: 40px;
+      margin-top: 20px;
+      padding: 0 30px;
+      text-align: center;
+  }
+  
+  .contact-us form{
+      width: 800px;
+      border-radius: 10px;
+      box-shadow: 0 2px 37px 0 rgb(0 0 0 / 10%);
+      padding: 4rem;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .contact-us input{
+      display: block;
+      width: 100%;
+      margin-top: 10px;
+      padding: 10px;
+      border: 1px solid #cecece;
+      transition: 200ms ease-in-out;
+  }
+  
+  .contact-us input:focus{
+      border: 1px solid #f47e29;
+      outline: none;
+  }
+  
+  .form-row{
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      margin-bottom: 20px;
+  }
+  
+  .contact-us select{
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: 1px solid #cecece;
+      transition: 200ms ease-in-out;
+  }
+  
+  .contact-us select:focus{
+      border: 1px solid #f47e29;
+      outline: none;
+  }
+  
+  .form-field{
+      width: 45%;
+  }
+  
+  .contact-us button{
+      width: 40%;
+      margin-top: 30px;
+      padding: 10px;
+      border: none;
+      background-color: #f3541e;
+      color: white;
+      font-size: 1.3rem;
+      cursor: pointer;
+  }
+  
+  .contact-us .form-message{
+      width: 100%;
+  }
+  
+  .contact-us textarea{
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      height: 150px;
+      resize: vertical;
+      border: 1px solid #cecece;
+      transition: 200ms ease-in-out;
+  }
+  
+  .contact-us textarea:focus{
+      border: 1px solid #f47e29;
+      outline: none;
+  }
+  
+  .contact-us label{
+      color: #f3541e;
+  }

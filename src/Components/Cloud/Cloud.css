@@ -23,8 +23,8 @@
   position: absolute;
   height: 100%;
   transform: rotate(270deg);
-  left: 61%;
-  width: 100px;
+  left: 58%;
+  width: 111% !important;
 }
 
 .data-cloud-right {
@@ -34,9 +34,9 @@
 
 .data-cloud-page1::before {
   position: absolute;
-  height: 99.5%;
+  height: 105%;
   background-color: #ffc801;
-  top: 2px;
+  top: 0px;
   right: 0;
   width: 50%;
   content: "";
@@ -116,6 +116,7 @@
   font-size: 1.5rem;
   line-height: 1.5;
   margin-bottom: 30px;
+  text-align: justify;
 }
 
 .service-bullets {

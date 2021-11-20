@@ -56,6 +56,8 @@ const Landing = () => {
     }
   
     const handleScroll = () => {
+      const url = window.location.href.split("/");
+      if(url[3]!== '') return;
       if (isScrolledIntoView($(".counters-inner")) && !viewed) {
         viewed = true;
         $(".counter-number").each(function () {
@@ -199,19 +201,19 @@ const Landing = () => {
             <img src={belchina} alt="client" />
           </div>
           <div className="client">
-            <img src={blueorbit} alt="client" />
+            <img src={blueorbit} style={{width:'60%'}} alt="client" />
           </div>
           <div className="client">
-            <img src={ict} alt="client" />
+            <img src={ict} style={{width:'50%'}} alt="client" />
           </div>
           <div className="client">
-            <img src={pwc} alt="client" />
+            <img src={pwc} style={{width:'60%'}} alt="client" />
           </div>
           <div className="client">
-            <img src={techm} alt="client" />
+            <img src={techm} style={{width:'85%'}} alt="client" />
           </div>
           <div className="client">
-            <img src={qlik} alt="client" />
+            <img src={qlik} style={{width:'80%'}} alt="client" />
           </div>
           <div className="client">
             <img src={jnj} alt="client" />
@@ -220,10 +222,10 @@ const Landing = () => {
             <img src={future} alt="client" />
           </div>
           <div className="client">
-            <img src={flycloud} alt="client" />
+            <img src={flycloud} style={{width:'80%',marginTop:'-10px'}} alt="client" />
           </div>
           <div className="client">
-            <img src={frontdoor} alt="client" />
+            <img src={frontdoor} style={{width:'90%'}} alt="client" />
           </div>
         </div>
       </div>

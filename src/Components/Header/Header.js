@@ -211,6 +211,7 @@ const Header = () => {
                   className="header-link"
                   key={`link${i}`}
                   onMouseOver={(e) => {
+                    e.preventDefault();
                     const ele = document.querySelector(".header-info");
                     setActiveLink(data[i]);
                     if (
@@ -218,11 +219,7 @@ const Header = () => {
                       ele.style.display === "none"
                     )
                       ele.style.display = "flex";
-                    else if (
-                      e.target.textContent === activeLink.linkname &&
-                      (ele.style.display === "" || ele.style.display === "flex")
-                    )
-                      ele.style.display = "none";
+                    
                     else if (
                       e.target.textContent !== activeLink.linkname &&
                       ele.style.display === "none"

@@ -20,7 +20,7 @@ const Techpartners = () => {
         <img src={looker} alt="techpartner" />
         <img src={rapidminder} alt="techpartner" />
         <img src={nasscom} alt="techpartner" />
-        <img src={erwin} alt="techpartner" />
+        <img src={erwin}style={{width:'250px'}} alt="techpartner" />
       </div>
     </div>
   );

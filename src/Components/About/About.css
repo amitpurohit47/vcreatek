@@ -193,8 +193,16 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  min-height: 90vh;
   position: relative;
+}
+
+/* .image-gallery-fullscreen-button, .image-gallery-play-button{
+  display: none;
+} */
+
+.image-gallery-left-nav .image-gallery-svg, .image-gallery-right-nav .image-gallery-svg{
+  height: 50px;
+  width: 30px;
 }
 
 .gallery::before{
@@ -211,7 +219,15 @@
 }
 
 .image-gallery{
-  width: 50%;
+  width: 80%;
+}
+
+.image-gallery-slide{
+  height: 400px;
+}
+
+.image-gallery-slide img{
+  height: 100%;
 }
 
 .aboutus-page::before {
