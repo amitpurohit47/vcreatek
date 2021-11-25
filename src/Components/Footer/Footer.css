@@ -21,7 +21,7 @@
 
 .footer1-inner h3{
     color: #163967;
-    font-size: 1.2rem;
+    font-size: 18px;
     margin-bottom: 20px;
     position: relative;
 }
@@ -38,10 +38,12 @@
 
 .footer1-inner h4{
     margin-bottom: 15px;
+    font-size: 15px;
 }
 
 .footer1-inner p{
     color: #6b6d7e;
+    font-size: 15px;
 }
 
 .footer2{
@@ -54,7 +56,7 @@
 }
 
 .copyright{
-    background-color: #c46800;
+    background-color: #F3541E;
     width: 100%;
     color: white;
     text-align: center;
@@ -73,25 +75,32 @@
 }
 
 .footer2-sec1 img{
-    width: 120px;
-    margin-bottom: 20px;
+    width: 90px;
+    margin-bottom: 15px;
 }
 
 .footer2-sec1 button{
     padding: 8px 11px;
     background-color: #fb8500;
     color: white;
-    font-size: 1.1rem;
+    font-size: 15px;
     border-radius: 5px;
     border: none;
     outline: none;
+    cursor: pointer;
+    transform: scale(1);
+    transition: 200ms ease-in-out;
+}
+
+.footer2-sec1 button:hover{
+    transform: scale(1.1);
 }
 
 .footer2 h4{
-    font-size: 1.3rem;
+    font-size: 18px;
     margin-bottom: 15px;
 }
 
 .footer2 p{
-    font-size: 1rem;
+    font-size: 15px;
 }

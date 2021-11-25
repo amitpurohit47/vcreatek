@@ -1,19 +1,27 @@
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Header from './Components/Header/Header';
-import Landing from './Components/Landing/Landing';
-import MobileNav from './Components/MobileNav/MobileNav';
-import Footer from './Components/Footer/Footer';
-import Smart from './Components/Smart/Smart';
-import Cloud from './Components/Cloud/Cloud';
-import Webapp from './Components/Webapp/Webapp';
-import Research from './Components/Research/Research';
-import About from './Components/About/About';
-import Techpartners from './Components/Techpartners/Techpartners';
-import Careers from './Components/Careers/Careers';
-import './App.css';
-import Contact from './Components/Contact/Contact';
+import { useEffect } from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Header from "./Components/Header/Header";
+import Landing from "./Components/Landing/Landing";
+import MobileNav from "./Components/MobileNav/MobileNav";
+import Footer from "./Components/Footer/Footer";
+import Smart from "./Components/Smart/Smart";
+import Cloud from "./Components/Cloud/Cloud";
+import Webapp from "./Components/Webapp/Webapp";
+import Research from "./Components/Research/Research";
+import About from "./Components/About/About";
+import Techpartners from "./Components/Techpartners/Techpartners";
+import Careers from "./Components/Careers/Careers";
+import Contact from "./Components/Contact/Contact";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "./App.css";
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   return (
     <BrowserRouter>
       <article className="App">
@@ -26,7 +34,11 @@ function App() {
           <Route path="/webapp" exact component={() => <Webapp />} />
           <Route path="/research-lab" exact component={() => <Research />} />
           <Route path="/about" exact component={() => <About />} />
-          <Route path="/technological-partners" exact component={() => <Techpartners />} />
+          <Route
+            path="/technological-partners"
+            exact
+            component={() => <Techpartners />}
+          />
           <Route path="/careers" exact component={() => <Careers />} />
           <Route path="/contact" exact component={() => <Contact />} />
         </Switch>

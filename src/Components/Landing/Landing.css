@@ -12,7 +12,7 @@
 
 .landing-page h1 {
   font-size: 4rem;
-  color: #fb8500;
+  color: #F3541E;
 }
 
 .landing-page img {
@@ -33,7 +33,7 @@
 .why-choose-us h1 {
   text-align: center;
   color: white;
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 50px;
   width: 70%;
 }
@@ -48,7 +48,7 @@
   position: absolute;
   width: 100%;
   height: 70%;
-  background-color: #fb8500;
+  background-color: #F3541E;
   content: "";
   z-index: -1;
   top: 0;
@@ -74,6 +74,13 @@
   align-items: center;
   justify-content: center;
   padding: 20px;
+  transform: scale(1);
+  transition: 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.landing-card:hover{
+  transform: scale(1.03);
 }
 
 .landing-card p {
@@ -130,11 +137,12 @@
 
 .core-values p {
   font-size: 1.2rem;
-  width: 60%;
+  width: 100%;
+  text-align: justify;
 }
 
 .core-values h4 {
-  color: #fb8500;
+  color: #F3541E;
   margin-bottom: 20px;
   font-size: 2rem;
 }
@@ -144,6 +152,10 @@
   font-size: 3rem;
   margin-bottom: 30px;
   color: black;
+}
+
+.values-carousel h1{
+  color: white;
 }
 
 input[type="radio"] {
@@ -162,7 +174,7 @@ input[type="radio"]#section1:checked ~ section:nth-of-type(1) {
 }
 
 input[type="radio"]#section1:checked ~ .cover {
-  background-color: #f8b195;
+  background-color: #F3541E;
 }
 
 input[type="radio"]#section2:checked ~ nav label[for="section2"] {
@@ -210,6 +222,21 @@ input[type="radio"]#section4:checked ~ .cover {
   background-color: #345d7e;
 }
 
+input[type="radio"]#section5:checked ~ nav label[for="section5"] {
+  background-color: white;
+}
+
+input[type="radio"]#section5:checked ~ section:nth-of-type(5) {
+  z-index: 1;
+  top: 0;
+  transition: top 0.5s ease-in-out;
+  transition-delay: 0s;
+}
+
+input[type="radio"]#section5:checked ~ .cover {
+  background-color: cadetblue;
+}
+
 .values-carousel {
   height: 50vh;
   position: relative;
@@ -239,6 +266,7 @@ input[type="radio"]#section4:checked ~ .cover {
 .values-carousel section {
   height: 100%;
   display: flex;
+  flex-flow: column;
   align-items: center;
   justify-content: center;
   position: absolute;
@@ -248,8 +276,12 @@ input[type="radio"]#section4:checked ~ .cover {
   transition-delay: 0.5s;
 }
 
+.values-carousel section p{
+  color: white;
+}
+
 .values-carousel section:nth-of-type(1) {
-  background: #f8b195;
+  background: #F3541E;
 }
 
 .values-carousel section:nth-of-type(2) {
@@ -262,6 +294,10 @@ input[type="radio"]#section4:checked ~ .cover {
 
 .values-carousel section:nth-of-type(4) {
   background: #345d7e;
+}
+
+.values-carousel section:nth-of-type(5) {
+  background: cadetblue;
 }
 
 .cover {
@@ -285,6 +321,7 @@ input[type="radio"]#section4:checked ~ .cover {
   font-size: 1.8rem;
   text-align: center;
   margin-bottom: 30px;
+  width: 75%;
 }
 
 .counters-inner {
@@ -316,7 +353,7 @@ input[type="radio"]#section4:checked ~ .cover {
 .counter-number {
   font-size: 4rem;
   margin-bottom: 10px;
-  color: #fb8500;
+  color: #F3541E;
   font-weight: 700;
   position: relative;
 }
@@ -324,7 +361,7 @@ input[type="radio"]#section4:checked ~ .cover {
 .counter-number::before{
   position: absolute;
   content: '+';
-  right: -40px;
+  right: -50px;
 }
 
 .clients {
@@ -380,7 +417,9 @@ input[type="radio"]#section4:checked ~ .cover {
   z-index: -1;
 }
 
-
+.testimonials p{
+  font-size: 15px;
+}
 
 .testimonials h3 {
   color: crimson;
@@ -438,7 +477,7 @@ input[type="radio"]#section4:checked ~ .cover {
 .swiperslide-footer {
   display: flex;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 .swiperslide-footer img {
@@ -448,7 +487,7 @@ input[type="radio"]#section4:checked ~ .cover {
 
 .swiperslide-footer h3 {
   color: #163967;
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1;
   margin-left: 10px;
 }
@@ -504,7 +543,7 @@ input[type="radio"]#section4:checked ~ .cover {
 
 .why-choose-us2-inner button{
   padding: 10px 20px;
-  background-color: #fb8500;
+  background-color: #F3541E;
   color: white;
   border: none;
   outline: none;
@@ -524,7 +563,7 @@ input[type="radio"]#section4:checked ~ .cover {
 }
 
 .more-info-left{
-  background-color: #fb8500;
+  background-color: #F3541E;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -536,7 +575,7 @@ input[type="radio"]#section4:checked ~ .cover {
 .more-info-left h1{
   color: white;
   text-align: center;
-  font-size: 3.4rem;
+  font-size: 2.4rem;
   margin-bottom: 30px;
 }
 
@@ -557,6 +596,11 @@ input[type="radio"]#section4:checked ~ .cover {
   cursor: pointer;
   transform: scale(1);
   transition: transform 200ms ease-in-out;
+}
+
+.more-info-left button a{
+  text-decoration: none;
+  color: black;
 }
 
 .more-info-left button:hover{
