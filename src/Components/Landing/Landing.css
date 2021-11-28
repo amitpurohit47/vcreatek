@@ -123,6 +123,12 @@
   color: #163967;
   margin-bottom: 10px;
 }
+
+.landing-card h3 a{
+  text-decoration: none;
+  color: #163967;
+}
+
 .landing-card p {
   color: #6b6d7e;
 }

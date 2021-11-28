@@ -1,0 +1,50 @@
+.sales{
+    padding-top: 5rem;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.sales h1{
+    padding: 3rem 0;
+    font-size: 3rem;
+    color: #F3541E;
+}
+
+.sales-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sales-left{
+    width: 48%;
+}
+
+.sales-left p{
+    font-size: 16px;
+    color: #7E8090;
+    margin-bottom: 30px;
+    text-align: justify;
+    line-height: 1.7;
+}
+
+.sales-left li{
+    font-size: 16px;
+    color: #7E8090;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.sales-left h3{
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.sales-right{
+    width: 48%;
+}
+
+.sales-right img{
+    width: 100%;
+}

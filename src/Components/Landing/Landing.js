@@ -95,7 +95,7 @@ const Landing = () => {
             <div className="card-img-container">
               <img src={homeicon1} alt="homeicon" />
             </div>
-            <h3>Finance Analytics</h3>
+            <h3><Link to="/finance" onClick={() => window.scrollTo(0,0)}>Finance Analytics</Link></h3>
             <img src={zigzag} alt="zigzag" />
             <p>Up-to-the-minute reporting of key financial transactions</p>
           </div>
@@ -103,7 +103,7 @@ const Landing = () => {
             <div className="card-img-container">
               <img src={homeicon2} alt="homeicon" />
             </div>
-            <h3>Marketing Analytics</h3>
+            <h3><Link to="/marketing" onClick={() => window.scrollTo(0,0)}>Marketing Analytics</Link></h3>
             <img src={zigzag} alt="zigzag" />
             <p>Smart blend of Technology and Market Research</p>
           </div>
@@ -111,7 +111,7 @@ const Landing = () => {
             <div className="card-img-container">
               <img src={homeicon3} alt="homeicon" />
             </div>
-            <h3>Sales Analytics</h3>
+            <h3><Link to="/sales" onClick={() => window.scrollTo(0,0)}>Sales Analytics</Link></h3>
             <img src={zigzag} alt="zigzag" />
             <p>Increase Forecasting Accuracy and Sales Results</p>
           </div>
@@ -119,7 +119,7 @@ const Landing = () => {
             <div className="card-img-container">
               <img src={homeicon4} alt="homeicon" />
             </div>
-            <h3>Supply Chain Analytics</h3>
+            <h3><Link to="/supply-chain" onClick={() => window.scrollTo(0,0)}>Supply Chain Analytics</Link></h3>
             <img src={zigzag} alt="zigzag" />
             <p>
               Customized for business and the specific KPI’s driving the

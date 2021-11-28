@@ -1,0 +1,50 @@
+.finance{
+    padding-top: 5rem;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.finance h1{
+    padding: 3rem 0;
+    font-size: 3rem;
+    color: #F3541E;
+}
+
+.finance-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.finance-left{
+    width: 48%;
+}
+
+.finance-left p{
+    font-size: 16px;
+    color: #7E8090;
+    margin-bottom: 30px;
+    text-align: justify;
+    line-height: 1.7;
+}
+
+.finance-left li{
+    font-size: 16px;
+    color: #7E8090;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.finance-left h3{
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.finance-right{
+    width: 48%;
+}
+
+.finance-right img{
+    width: 100%;
+}

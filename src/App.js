@@ -12,6 +12,10 @@ import About from "./Components/About/About";
 import Techpartners from "./Components/Techpartners/Techpartners";
 import Careers from "./Components/Careers/Careers";
 import Contact from "./Components/Contact/Contact";
+import Finance from "./Components/Finance/Finance";
+import Sales from "./Components/Sales/Sales";
+import Marketing from "./Components/Marketing/Marketing";
+import Supplychain from "./Components/Supplychain/Supplychain";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./App.css";
@@ -41,6 +45,10 @@ function App() {
           />
           <Route path="/careers" exact component={() => <Careers />} />
           <Route path="/contact" exact component={() => <Contact />} />
+          <Route path="/finance" exact component={() => <Finance />} />
+          <Route path="/sales" exact component={() => <Sales />} />
+          <Route path="/marketing" exact component={() => <Marketing />} />
+          <Route path="/supply-chain" exact component={() => <Supplychain />} />
         </Switch>
         <Footer />
       </article>
