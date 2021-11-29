@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import $ from "jquery";
-import landing from "../../Assets/Images/undraw_data_points_re_vkpq.svg";
 import homeicon1 from "../../Assets/Images/home2_icon1.png";
 import homeicon2 from "../../Assets/Images/home2_icon2.png";
 import homeicon3 from "../../Assets/Images/home2_icon3.png";
@@ -32,6 +31,7 @@ import SwiperCore, { EffectCoverflow, Pagination } from "swiper";
 import { Link } from "react-router-dom";
 import "swiper/swiper-bundle.min.css";
 import "./Landing.css";
+import Hero from "./Hero/Hero";
 
 SwiperCore.use([EffectCoverflow, Pagination]);
 
@@ -39,6 +39,10 @@ const Landing = () => {
   const handleClick = () => {
     document.querySelector(".header-info").style.display = "none";
   };
+
+  // let prev = 0;
+
+  
 
   useEffect(() => {
     let viewed = false;
@@ -84,8 +88,7 @@ const Landing = () => {
   return (
     <div className="landing-page" onMouseOver={handleClick}>
       <div className="landing-main">
-        <h1>We are VCreaTek</h1>
-        <img src={landing} alt="landing" />
+        <Hero />
       </div>
       <div className="why-choose-us">
         <h4>WHY CHOOSE US</h4>
