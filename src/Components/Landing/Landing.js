@@ -78,6 +78,22 @@ const Landing = () => {
         });
       }
     };
+
+    setInterval(()=>{
+      const wanted = document.getElementsByName("item");
+      for (var i = 0; i < wanted.length; ++i) {
+        if (wanted[i].checked == true) {
+            if (i == wanted.length - 1)
+            {
+                wanted[0].checked = true;
+            } else {
+                wanted[i + 1].checked = true;
+            }
+            break;
+        }
+    }
+    },3500);
+
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
