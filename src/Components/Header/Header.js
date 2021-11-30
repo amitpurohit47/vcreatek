@@ -6,9 +6,6 @@ import "./Header.css";
 const Header = () => {
   const data = [
     {
-      linkname: "Home",
-    },
-    {
       linkname: "Services",
       subdata: [
         {
@@ -56,18 +53,27 @@ const Header = () => {
                 "Sales Force Effectiveness Analytics",
               ],
             },
+            // {
+            //   subdatainnerName: "Sales & Distribution Analytics",
+            // },
+            // {
+            //   subdatainnerName: "Healthcare Analytics Service",
+            //   subdatainnerList: [
+            //     "Lifecycle Management Forecasting",
+            //     "Business Development & Licensing Forecast",
+            //     "Market Sizing & Opportunity Forecast",
+            //     "Insight & Data Analytics",
+            //     "SFE & Omnichannel Analytics",
+            //   ],
+            // },
             {
               subdatainnerName: "Sales & Distribution Analytics",
-            },
-            {
-              subdatainnerName: "Healthcare Analytics Service",
               subdatainnerList: [
-                "Lifecycle Management Forecasting",
-                "Business Development & Licensing Forecast",
-                "Market Sizing & Opportunity Forecast",
-                "Insight & Data Analytics",
-                "SFE & Omnichannel Analytics",
-              ],
+                "Understand",
+                "Investigate",
+                "Predict",
+                "Act"
+              ]
             },
             {
               subdatainnerName: "Supply Chain Management",
@@ -90,10 +96,6 @@ const Header = () => {
       subdata: ["Application UI,UX", "Industrial Product Design"],
     },
     {
-      linkname: "Technological Partners",
-      subdata: ["Erwin", "Snowflake", "Looker", "UiPath", "Rapidminer"],
-    },
-    {
       linkname: "About Us",
       subdata: [
         "Core Values",
@@ -105,10 +107,12 @@ const Header = () => {
       ],
     },
     {
-      linkname: "Careers",
-    },
-    {
       linkname: "Contact Us",
+      subdata: [
+        "Reach Us",
+        "Careers",
+        "Business Opportunities"
+      ]
     },
   ];
 
@@ -140,19 +144,28 @@ const Header = () => {
         "Sales Force Effectiveness Analytics",
       ],
     },
+    // {
+    //   name: "Sales & Distribution Analytics",
+    //   list: [],
+    // },
+    // {
+    //   name: "Healthcare Analytics Service",
+    //   list: [
+    //     "Lifecycle Management Forecasting",
+    //     "Business Development & Licensing Forecast",
+    //     "Market Sizing & Opportunity Forecast",
+    //     "Insight & Data Analytics",
+    //     "SFE & Omnichannel Analytics",
+    //   ],
+    // },
     {
       name: "Sales & Distribution Analytics",
-      list: [],
-    },
-    {
-      name: "Healthcare Analytics Service",
       list: [
-        "Lifecycle Management Forecasting",
-        "Business Development & Licensing Forecast",
-        "Market Sizing & Opportunity Forecast",
-        "Insight & Data Analytics",
-        "SFE & Omnichannel Analytics",
-      ],
+        "Understand",
+        "Investigate",
+        "Predict",
+        "Act"
+      ]
     },
     {
       name: "Supply Chain Management",
@@ -171,10 +184,7 @@ const Header = () => {
   const links = ["/data-cloud", "/webapp", "/research-lab"];
   const seclinks = {
     "About Us": "/about",
-    "Technological Partners": "/technological-partners",
     "Design Studio": "/design-studio",
-    "Home" : "/",
-    "Careers" : "/careers",
     "Contact Us" : "/contact"
   };
 
@@ -185,7 +195,7 @@ const Header = () => {
       <div className="header-container">
         <div className="header-main-container">
           <div className="header-logo-container">
-            <Link to="/">
+            <Link to="/" onClick={() => window.scrollTo(0,0)}>
               <img src={logo} alt="logo" />
             </Link>
           </div>
@@ -255,7 +265,7 @@ const Header = () => {
       </div>
       <div
         className={`${
-          (activeLink.linkname === "Home" ||
+          (
             activeLink.linkname === "Careers" ||
             activeLink.linkname === "Contact") &&
           "header-home"
@@ -270,9 +280,10 @@ const Header = () => {
             sectiondata1.map((item, i) =>
               activeLink.linkname === "About Us" ||
               activeLink.linkname === "Technological Partners" ||
-              activeLink.linkname === "Design Studio" ? (
+              activeLink.linkname === "Design Studio" ||
+              activeLink.linkname === "Contact Us" ? (
                 <Link
-                  to={seclinks[activeLink.linkname]}
+                  to={item==="Careers" ? "/careers" :seclinks[activeLink.linkname]}
                   key={`section1.${i}`}
                   onClick={() => {
                     document.querySelector(".header-info").style.display =
@@ -342,7 +353,7 @@ const Header = () => {
         </div>
         {activeLink.linkname === "Services" && (
           <div className="header-info-section2">
-            {sectiondata2 !== null && typeof sectiondata2[0] === "string"
+            {sectiondata2 !== null && sectiondata2!==undefined && typeof sectiondata2[0] === "string"
               ? sectiondata2.map((item, i) => {
                   return (
                     <Link
@@ -360,7 +371,7 @@ const Header = () => {
                     </Link>
                   );
                 })
-              : sectiondata2.map((item, i) => (
+              : sectiondata2?.map((item, i) => (
                   <p
                     key={`section2.${i}`}
                     onMouseOver={() => {

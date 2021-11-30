@@ -141,6 +141,7 @@ const Hero = () => {
 
   return (
     <div className="hero">
+      <h1 className="hero-header">Why Choose vCreaTek?</h1>
       <div className="container">
         <header className="c-header c-header--archive c-header--project-list">
           <div className="c-mouse-vertical-carousel js-carousel u-media-wrapper u-media-wrapper--16-9">
@@ -149,12 +150,9 @@ const Hero = () => {
                 className="c-mouse-vertical-carousel__list-item js-carousel-list-item"
                 data-item-id="0"
               >
-                  <p className="c-mouse-vertical-carousel__eyebrow u-b4">
-                    <span>01</span> Nevada
-                  </p>
 
                   <p className="c-mouse-vertical-carousel__title u-a5">
-                    Carson City
+                  160+ Team Members
                   </p>
               </li>
 
@@ -162,12 +160,10 @@ const Hero = () => {
                 className="c-mouse-vertical-carousel__list-item js-carousel-list-item"
                 data-item-id="1"
               >
-                  <p className="c-mouse-vertical-carousel__eyebrow u-b4">
-                    <span>02</span> New Hampshire
-                  </p>
+                  
 
                   <p className="c-mouse-vertical-carousel__title u-a5">
-                    Concord
+                  7+ Countries Served
                   </p>
               </li>
 
@@ -175,12 +171,10 @@ const Hero = () => {
                 className="c-mouse-vertical-carousel__list-item js-carousel-list-item"
                 data-item-id="2"
               >
-                  <p className="c-mouse-vertical-carousel__eyebrow u-b4">
-                    <span>03</span> New York
-                  </p>
+                  
 
                   <p className="c-mouse-vertical-carousel__title u-a5">
-                    Albany
+                  45+ Projects Delivered
                   </p>
               </li>
 
@@ -188,12 +182,10 @@ const Hero = () => {
                 className="c-mouse-vertical-carousel__list-item js-carousel-list-item"
                 data-item-id="3"
               >
-                  <p className="c-mouse-vertical-carousel__eyebrow u-b4">
-                    <span>04</span> Oklahoma
-                  </p>
+                  
 
                   <p className="c-mouse-vertical-carousel__title u-a5">
-                    Oklahoma City
+                  10+ Delighted Customers
                   </p>
               </li>
 

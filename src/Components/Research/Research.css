@@ -1,5 +1,6 @@
 .researchlab-page {
   padding-top: 5rem;
+  overflow-x: clip;
 }
 
 .researchlab1 {

@@ -25,6 +25,7 @@ import jnj from "../../Assets/Images/JnJ.png";
 import pwc from "../../Assets/Images/PwC.png";
 import qlik from "../../Assets/Images/Qlik.png";
 import techm from "../../Assets/Images/techmahindra.png";
+import next from "../../Assets/Images/next.png";
 import { Swiper } from "swiper/react/swiper";
 import { SwiperSlide } from "swiper/react/swiper-slide";
 import SwiperCore, { EffectCoverflow, Pagination } from "swiper";
@@ -41,8 +42,6 @@ const Landing = () => {
   };
 
   // let prev = 0;
-
-  
 
   useEffect(() => {
     let viewed = false;
@@ -91,40 +90,98 @@ const Landing = () => {
         <Hero />
       </div>
       <div className="why-choose-us">
-        <h4>WHY CHOOSE US</h4>
-        <h1>A Business Consulting Company That Can Produce Anything.</h1>
-        <div className="landing-cards">
+        <h4 data-aos="flip-up">WHY CHOOSE US</h4>
+        <h1 data-aos="flip-up">A Business Consulting Company That Can Produce Anything.</h1>
+        <div className="landing-cards" data-aos="fade-up">
           <div className="landing-card">
-            <div className="card-img-container">
+            <div
+              className="card-img-container"
+              data-aos="flip-up"
+              data-aos-delay="300"
+            >
               <img src={homeicon1} alt="homeicon" />
             </div>
-            <h3><Link to="/finance" onClick={() => window.scrollTo(0,0)}>Finance Analytics</Link></h3>
-            <img src={zigzag} alt="zigzag" />
-            <p>Up-to-the-minute reporting of key financial transactions</p>
+            <h3 data-aos="flip-up" data-aos-delay="300">
+              <Link to="/finance" onClick={() => window.scrollTo(0, 0)}>
+                Finance Analytics
+              </Link>
+            </h3>
+            <img
+              src={zigzag}
+              alt="zigzag"
+              data-aos="flip-up"
+              data-aos-delay="300"
+            />
+            <p data-aos="flip-up" data-aos-delay="300">
+              Up-to-the-minute reporting of key financial transactions
+            </p>
           </div>
           <div className="landing-card">
-            <div className="card-img-container">
+            <div
+              className="card-img-container"
+              data-aos="flip-up"
+              data-aos-delay="300"
+            >
               <img src={homeicon2} alt="homeicon" />
             </div>
-            <h3><Link to="/marketing" onClick={() => window.scrollTo(0,0)}>Marketing Analytics</Link></h3>
-            <img src={zigzag} alt="zigzag" />
-            <p>Smart blend of Technology and Market Research</p>
+            <h3 data-aos="flip-up" data-aos-delay="300">
+              <Link to="/marketing" onClick={() => window.scrollTo(0, 0)}>
+                Marketing Analytics
+              </Link>
+            </h3>
+            <img
+              src={zigzag}
+              alt="zigzag"
+              data-aos="flip-up"
+              data-aos-delay="300"
+            />
+            <p data-aos="flip-up" data-aos-delay="300">
+              Smart blend of Technology and Market Research
+            </p>
           </div>
           <div className="landing-card">
-            <div className="card-img-container">
+            <div
+              className="card-img-container"
+              data-aos="flip-up"
+              data-aos-delay="300"
+            >
               <img src={homeicon3} alt="homeicon" />
             </div>
-            <h3><Link to="/sales" onClick={() => window.scrollTo(0,0)}>Sales Analytics</Link></h3>
-            <img src={zigzag} alt="zigzag" />
-            <p>Increase Forecasting Accuracy and Sales Results</p>
+            <h3 data-aos="flip-up" data-aos-delay="300">
+              <Link to="/sales" onClick={() => window.scrollTo(0, 0)}>
+                Sales Analytics
+              </Link>
+            </h3>
+            <img
+              src={zigzag}
+              alt="zigzag"
+              data-aos="flip-up"
+              data-aos-delay="300"
+            />
+            <p data-aos="flip-up" data-aos-delay="300">
+              Increase Forecasting Accuracy and Sales Results
+            </p>
           </div>
           <div className="landing-card">
-            <div className="card-img-container">
+            <div
+              className="card-img-container"
+              data-aos="flip-up"
+              data-aos-delay="300"
+            >
               <img src={homeicon4} alt="homeicon" />
             </div>
-            <h3><Link to="/supply-chain" onClick={() => window.scrollTo(0,0)}>Supply Chain Analytics</Link></h3>
-            <img src={zigzag} alt="zigzag" />
-            <p>
+            <h3 data-aos="flip-up" data-aos-delay="300">
+              <Link to="/supply-chain" onClick={() => window.scrollTo(0, 0)}>
+                Supply Chain Analytics
+              </Link>
+            </h3>
+            <img
+              src={zigzag}
+              alt="zigzag"
+              data-aos="flip-up"
+              data-aos-delay="300"
+            />
+            <p data-aos="flip-up" data-aos-delay="300">
               Customized for business and the specific KPI’s driving the
               organization
             </p>
@@ -132,9 +189,9 @@ const Landing = () => {
         </div>
       </div>
       <div className="core-values">
-        <h4>Core Values</h4>
-        <h1>Over 6 Years of Experience</h1>
-        <p>
+        <h4 data-aos="flip-up">Core Values</h4>
+        <h1 data-aos="flip-up">Over 6 Years of Experience</h1>
+        <p data-aos="flip-up">
           Our organization is based on the five value principles. Infact, the v
           (roman five) in our company s name vCreaTek', represents those 'Five
           Values which forms the core pillars of our thought process. These
@@ -193,13 +250,13 @@ const Landing = () => {
         <div className="cover"></div>
       </div>
       <div className="landing-counters">
-        <h4>
+        <h4 data-aos="flip-up">
           ‘We’ work as one single team hand in hand with our customers by having
           high degree of accountability, collaboration and agility
         </h4>
         <div className="counters-inner">
-          <img src={landing1} alt="landing1" />
-          <div className="counters-main">
+          <img src={landing1} alt="landing1" data-aos="zoom-in" />
+          <div className="counters-main"  data-aos="zoom-in">
             <div className="counter">
               <p className="counter-number">100</p>
               <h5>TEAM SIZE</h5>
@@ -258,9 +315,9 @@ const Landing = () => {
           </div>
         </div>
       </div>
-      <div className="testimonials">
-        <h3>TESTIMONIALS</h3>
-        <h1>This Is Why We Do What We Do</h1>
+      <div className="testimonials" >
+        <h3 data-aos="flip-up">TESTIMONIALS</h3>
+        <h1 data-aos="flip-up">This Is Why We Do What We Do</h1>
         <img src={testimonial} alt="testimonial" />
         <div className="testimonial-swiper">
           <Swiper
@@ -394,37 +451,38 @@ const Landing = () => {
         </div>
       </div>
       <div className="why-choose-us2">
-        <img src={whychooseus} alt="whychooseus" />
-        <div className="why-choose-us2-inner">
+        <img src={whychooseus} alt="whychooseus" data-aos="zoom-in" />
+        <div className="why-choose-us2-inner"  data-aos="zoom-in">
           <h4>WHY CHOOSE US</h4>
           <h1>Drive More Customers Through Data Analytics</h1>
           <p>
             We combine the best of human and artificial intelligence to power
             possibilities for individuals, organisations and society
           </p>
-          <button>Read More</button>
+          <button><span>Read More</span><img src={next} alt="next" /></button>
         </div>
       </div>
       <div className="more-info">
         <div className="more-info-left">
-          <h1>Looking for Best Analytics & Automation Services ?</h1>
-          <p>
+          <h1 data-aos="flip-up" data-aos-delay="800">Looking for Best Analytics & Automation Services ?</h1>
+          <p  data-aos="flip-up" data-aos-delay="800">
             We have 40+ experts in Advance Technology which will change the way
             you work. Request for a call today.
           </p>
-          <button>
+          <button  data-aos="fade-up" data-aos-delay="800">
             <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>
               Get In Touch
             </Link>
+            <img src={next} alt="next" />
           </button>
         </div>
         <div className="more-info-right">
-          <img src={contactus1} alt="contactus" />
-          <img src={contactus3} alt="contactus" />
-          <img src={contactus2} alt="contactus" />
-          <img src={contactus6} alt="contactus" />
-          <img src={contactus4} alt="contactus" />
-          <img src={contactus5} alt="contactus" />
+          <img src={contactus1} alt="contactus" data-aos="zoom-in" data-aos-delay="800" />
+          <img src={contactus3} alt="contactus" data-aos="zoom-in" data-aos-delay="800" />
+          <img src={contactus2} alt="contactus" data-aos="zoom-in" data-aos-delay="800" />
+          <img src={contactus6} alt="contactus" data-aos="zoom-in" data-aos-delay="800" />
+          <img src={contactus4} alt="contactus" data-aos="zoom-in" data-aos-delay="800" />
+          <img src={contactus5} alt="contactus" data-aos="zoom-in" data-aos-delay="800" />
         </div>
       </div>
     </div>

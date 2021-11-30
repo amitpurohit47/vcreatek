@@ -1,5 +1,5 @@
 .landing-page {
-  padding-top: 8rem;
+  padding-top: 5rem;
   overflow: hidden;
 }
 
@@ -41,6 +41,7 @@
   padding: 2rem;
   padding-top: 5rem;
   font-family: "Open Sans", sans-serif;
+  margin-top: 4rem;
 }
 
 .why-choose-us h1 {
@@ -571,6 +572,20 @@ input[type="radio"]#section5:checked ~ .cover {
   cursor: pointer;
   transform: scale(1);
   transition: transform 200ms ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.why-choose-us2-inner button img{
+  width: 0;
+  transition: 300ms ease-in-out;
+  filter: invert(100%);
+}
+
+.why-choose-us2-inner button:hover img{
+  width: 25px;
+  margin-left: 5px;
 }
 
 .why-choose-us2-inner button:hover{
@@ -615,6 +630,19 @@ input[type="radio"]#section5:checked ~ .cover {
   cursor: pointer;
   transform: scale(1);
   transition: transform 200ms ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.more-info-left button img{
+  width: 0;
+  transition: 300ms ease-in-out;
+}
+
+.more-info-left button:hover img{
+  width: 25px;
+  margin-left: 5px;
 }
 
 .more-info-left button a{
@@ -622,9 +650,6 @@ input[type="radio"]#section5:checked ~ .cover {
   color: black;
 }
 
-.more-info-left button:hover{
-  transform: scale(1.1);
-}
 
 .more-info-right{
   display: flex;
