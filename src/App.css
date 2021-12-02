@@ -441,4 +441,18 @@
     font-size: 1.7rem !important;
     padding: 2rem 0 !important;
   }
+  .services-page-main{
+    width: 100% !important;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem !important;
+  }
+  .service-card{
+    width: 300px !important;
+    height: 300px !important;
+  }
+  .service-card img{
+    width: 300px !important;
+    height: 300px !important;
+  }
 }

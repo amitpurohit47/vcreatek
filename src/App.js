@@ -16,6 +16,7 @@ import Finance from "./Components/Finance/Finance";
 import Sales from "./Components/Sales/Sales";
 import Marketing from "./Components/Marketing/Marketing";
 import Supplychain from "./Components/Supplychain/Supplychain";
+import Services from "./Components/Services/Services";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./App.css";
@@ -49,6 +50,7 @@ function App() {
           <Route path="/sales" exact component={() => <Sales />} />
           <Route path="/marketing" exact component={() => <Marketing />} />
           <Route path="/supply-chain" exact component={() => <Supplychain />} />
+          <Route path="/services" exact component={() => <Services />} />
         </Switch>
         <Footer />
       </article>

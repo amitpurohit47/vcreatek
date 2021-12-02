@@ -45,17 +45,17 @@
 }
 
 .why-choose-us h1 {
-  text-align: center;
   color: white;
   font-size: 2rem;
   margin-bottom: 50px;
-  width: 70%;
+  width: 90%;
 }
 
 .why-choose-us h4 {
   color: white;
   font-size: 1.5rem;
   margin-bottom: 30px;
+  width: 90%;
 }
 
 .why-choose-us::before {
@@ -165,13 +165,14 @@
   color: #F3541E;
   margin-bottom: 20px;
   font-size: 2rem;
+  width: 100%;
 }
 
 .core-values h1 {
-  text-align: center;
   font-size: 3rem;
   margin-bottom: 30px;
   color: black;
+  width: 100%;
 }
 
 .values-carousel h1{
@@ -394,8 +395,9 @@ input[type="radio"]#section5:checked ~ .cover {
 
 .clients h1 {
   font-size: 2.5rem;
-  color: black;
+  color: #F3541E;
   margin-bottom: 30px;
+  width: 90%;
 }
 
 .clients-main {
@@ -403,7 +405,7 @@ input[type="radio"]#section5:checked ~ .cover {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 90%;
 }
 
 .client {
@@ -442,21 +444,25 @@ input[type="radio"]#section5:checked ~ .cover {
 }
 
 .testimonials h3 {
-  color: crimson;
+  color: #F3541E;
   font-size: 1.8rem;
+  width: 90%;
 }
 
 .testimonials h1 {
   color: #163967;
   margin-bottom: 30px;
+  width: 90%;
+  font-size: 3rem;
 }
+
 
 .testimonial-swiper {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 90%;
   height: 60vh;
   overflow: hidden;
 }
@@ -609,7 +615,7 @@ input[type="radio"]#section5:checked ~ .cover {
 .more-info-left h1{
   color: white;
   text-align: center;
-  font-size: 2.4rem;
+  font-size: 2.3rem;
   margin-bottom: 30px;
 }
 

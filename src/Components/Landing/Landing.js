@@ -82,8 +82,8 @@ const Landing = () => {
     setInterval(()=>{
       const wanted = document.getElementsByName("item");
       for (var i = 0; i < wanted.length; ++i) {
-        if (wanted[i].checked == true) {
-            if (i == wanted.length - 1)
+        if (wanted[i].checked === true) {
+            if (i === wanted.length - 1)
             {
                 wanted[0].checked = true;
             } else {

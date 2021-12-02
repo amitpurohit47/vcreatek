@@ -72,8 +72,8 @@
   height: 100%;
   background-image: radial-gradient(
     circle at 49% 50%,
-    rgba(2, 21, 25, 0.3),
-    rgba(2, 21, 25, 0.6)
+    rgba(2, 21, 25, 0.8),
+    rgba(2, 21, 25, 0.9)
   );
   z-index: 1;
 }
@@ -118,4 +118,5 @@
   background-size: cover;
   background-position: center;
   will-change: transform;
+  filter: blur(3px);
 }

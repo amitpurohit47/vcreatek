@@ -11,7 +11,7 @@
 
 .aboutus-page h1 {
   font-size: 4rem;
-  color: rgb(116, 21, 21);
+  color: #F3541E;
   margin-bottom: 4rem;
 }
 
@@ -19,6 +19,7 @@
   font-size: 2.6rem;
   margin-bottom: 2rem;
   margin-top: 6rem;
+  color: #F3541E;
 }
 
 .aboutus-page p{

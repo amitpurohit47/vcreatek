@@ -68,12 +68,7 @@ const Header = () => {
             // },
             {
               subdatainnerName: "Sales & Distribution Analytics",
-              subdatainnerList: [
-                "Understand",
-                "Investigate",
-                "Predict",
-                "Act"
-              ]
+              subdatainnerList: ["Understand", "Investigate", "Predict", "Act"],
             },
             {
               subdatainnerName: "Supply Chain Management",
@@ -108,11 +103,7 @@ const Header = () => {
     },
     {
       linkname: "Contact Us",
-      subdata: [
-        "Reach Us",
-        "Careers",
-        "Business Opportunities"
-      ]
+      subdata: ["Reach Us", "Careers", "Business Opportunities"],
     },
   ];
 
@@ -160,12 +151,7 @@ const Header = () => {
     // },
     {
       name: "Sales & Distribution Analytics",
-      list: [
-        "Understand",
-        "Investigate",
-        "Predict",
-        "Act"
-      ]
+      list: ["Understand", "Investigate", "Predict", "Act"],
     },
     {
       name: "Supply Chain Management",
@@ -185,7 +171,7 @@ const Header = () => {
   const seclinks = {
     "About Us": "/about",
     "Design Studio": "/design-studio",
-    "Contact Us" : "/contact"
+    "Contact Us": "/contact",
   };
 
   useEffect(() => {}, [activeLink]);
@@ -195,13 +181,13 @@ const Header = () => {
       <div className="header-container">
         <div className="header-main-container">
           <div className="header-logo-container">
-            <Link to="/" onClick={() => window.scrollTo(0,0)}>
+            <Link to="/" onClick={() => window.scrollTo(0, 0)}>
               <img src={logo} alt="logo" />
             </Link>
           </div>
           <div className="header-links">
             {data.map((item, i) => {
-              return item.subdata===undefined ? (
+              return item.subdata === undefined ? (
                 <Link
                   to={seclinks[item.linkname]}
                   className="header-link"
@@ -209,12 +195,53 @@ const Header = () => {
                   onClick={(e) => {
                     const ele = document.querySelector(".header-info");
                     setActiveLink(data[i]);
-                    ele.style.display = 'none';
-                    window.scrollTo(0,0);
+                    ele.style.display = "none";
+                    window.scrollTo(0, 0);
                   }}
                 >
                   {item.linkname}
-                  
+                </Link>
+              ) : activeLink.linkname === "Services" ? (
+                <Link
+                  className="header-link"
+                  to="/services"
+                  key={`link${i}`}
+                  onMouseOver={(e) => {
+                    e.preventDefault();
+                    const ele = document.querySelector(".header-info");
+                    setActiveLink(data[i]);
+                    if (
+                      e.target.textContent === activeLink.linkname &&
+                      ele.style.display === "none"
+                    )
+                      ele.style.display = "flex";
+                    else if (
+                      e.target.textContent !== activeLink.linkname &&
+                      ele.style.display === "none"
+                    )
+                      ele.style.display = "flex";
+                  }}
+                >
+                  {item.linkname}
+                  {item.subdata !== undefined ? (
+                    <svg
+                      width="11"
+                      height="6"
+                      fill="none"
+                      viewBox="0 0 11 6"
+                      aria-hidden="true"
+                      focusable="false"
+                      className="header-svg-container"
+                    >
+                      <path
+                        stroke="#1A1628"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="1.5"
+                        d="M10.006.75l-4.41 4.41a.308.308 0 0 1-.436 0L.75.75"
+                      ></path>
+                    </svg>
+                  ) : null}
                 </Link>
               ) : (
                 <p
@@ -229,7 +256,6 @@ const Header = () => {
                       ele.style.display === "none"
                     )
                       ele.style.display = "flex";
-                    
                     else if (
                       e.target.textContent !== activeLink.linkname &&
                       ele.style.display === "none"
@@ -265,8 +291,7 @@ const Header = () => {
       </div>
       <div
         className={`${
-          (
-            activeLink.linkname === "Careers" ||
+          (activeLink.linkname === "Careers" ||
             activeLink.linkname === "Contact") &&
           "header-home"
         } header-info`}
@@ -283,7 +308,11 @@ const Header = () => {
               activeLink.linkname === "Design Studio" ||
               activeLink.linkname === "Contact Us" ? (
                 <Link
-                  to={item==="Careers" ? "/careers" :seclinks[activeLink.linkname]}
+                  to={
+                    item === "Careers"
+                      ? "/careers"
+                      : seclinks[activeLink.linkname]
+                  }
                   key={`section1.${i}`}
                   onClick={() => {
                     document.querySelector(".header-info").style.display =
@@ -291,7 +320,7 @@ const Header = () => {
                     setSectiondata2([]);
                     if (item !== "Smart Analytics") setSection2link(links[i]);
                     if (item !== "Smart Analytics") setSectiondata3([]);
-                    window.scrollTo(0,0);
+                    window.scrollTo(0, 0);
                   }}
                 >
                   {item}
@@ -353,7 +382,9 @@ const Header = () => {
         </div>
         {activeLink.linkname === "Services" && (
           <div className="header-info-section2">
-            {sectiondata2 !== null && sectiondata2!==undefined && typeof sectiondata2[0] === "string"
+            {sectiondata2 !== null &&
+            sectiondata2 !== undefined &&
+            typeof sectiondata2[0] === "string"
               ? sectiondata2.map((item, i) => {
                   return (
                     <Link
@@ -364,7 +395,7 @@ const Header = () => {
                           "none";
                         setSectiondata2([]);
                         setSectiondata3([]);
-                        window.scrollTo(0,0);
+                        window.scrollTo(0, 0);
                       }}
                     >
                       {item}
@@ -410,7 +441,7 @@ const Header = () => {
                   document.querySelector(".header-info").style.display = "none";
                   setSectiondata2([]);
                   setSectiondata3([]);
-                  window.scrollTo(0,0);
+                  window.scrollTo(0, 0);
                 }}
               >
                 {item}
