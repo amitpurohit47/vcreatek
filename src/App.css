@@ -168,230 +168,231 @@
     margin-bottom: 20px;
     padding: 2rem !important;
   }
-  .services-right h1{
+  .services-right h1 {
     font-size: 1.9rem !important;
   }
-  .data-cloud-page1{
+  .data-cloud-page1 {
     flex-flow: column-reverse;
   }
-  .data-cloud-page1 h1{
+  .data-cloud-page1 h1 {
     font-size: 2rem !important;
   }
-  .data-cloud-page1::before{
+  .data-cloud-page1::before {
     display: none;
   }
-  .wave1{
+  .wave1 {
     display: none;
   }
-  .data-cloud-right{
+  .data-cloud-right {
     background: none !important;
     width: 90% !important;
   }
-  .data-cloud-left{
+  .data-cloud-left {
     width: 90% !important;
   }
-  .web-app1{
+  .web-app1 {
     flex-flow: column;
   }
-  .wave2{
+  .wave2 {
     display: none;
   }
-  .web-app1-left{
+  .web-app1-left {
     width: 90% !important;
   }
-  .web-app1-left h1{
+  .web-app1-left h1 {
     font-size: 2rem !important;
     text-align: center;
   }
-  .web-app1-right{
+  .web-app1-right {
     width: 90% !important;
     margin-top: 20px;
   }
-  .web-app2{
+  .web-app2 {
     width: 90% !important;
   }
-  .researchlab1::before{
+  .researchlab1::before {
     display: none;
   }
-  .researchlab1{
+  .researchlab1 {
     flex-flow: column;
   }
-  .wave3{
+  .wave3 {
     display: none;
   }
-  .researchlab1-left{
+  .researchlab1-left {
     width: 90% !important;
   }
-  .researchlab1-left h1{
+  .researchlab1-left h1 {
     font-size: 2rem !important;
     color: black !important;
     text-align: center !important;
   }
-  .researchlab1-right{
+  .researchlab1-right {
     width: 90% !important;
     margin: 20px 0;
   }
-  .researchlab2::before{
+  .researchlab2::before {
     display: none;
   }
-  .researchlab2-left{
+  .researchlab2-left {
     display: none !important;
   }
-  .researchlab2-right{
+  .researchlab2-right {
     width: 100% !important;
     text-align: justify;
   }
-  .researchlab-page>h1{
+  .researchlab-page > h1 {
     margin-top: 3rem !important;
     font-size: 2rem !important;
   }
-  .researchlab2-right h1{
+  .researchlab2-right h1 {
     font-size: 2rem !important;
   }
-  .researchlab3-right{
+  .researchlab3-right {
     display: none !important;
   }
-  .researchlab3-left{
+  .researchlab3-left {
     width: 90% !important;
     text-align: justify;
   }
-  .researchlab4 h1{
+  .researchlab4 h1 {
     font-size: 2rem !important;
   }
-  .smart-analytics1{
+  .smart-analytics1 {
     flex-flow: column;
   }
-  .smart-analytics1-left{
+  .smart-analytics1-left {
     width: 90% !important;
     padding-left: 0 !important;
   }
-  .smart-analytics1-right{
+  .smart-analytics1-right {
     display: none !important;
   }
-  .smart-analytics1-left h1{
+  .smart-analytics1-left h1 {
     font-size: 2rem !important;
     text-align: center;
   }
-  .smart-analytics1-left p{
+  .smart-analytics1-left p {
     text-align: justify;
   }
-  .smart-analytics2{
+  .smart-analytics2 {
     flex-flow: column;
     width: 90% !important;
   }
-  .smart-analytics2-left{
+  .smart-analytics2-left {
     margin-bottom: 20px;
   }
-  .techpartners-main img{
+  .techpartners-main img {
     width: 300px !important;
   }
-  .techpartners-page h1{
+  .techpartners-page h1 {
     font-size: 2rem !important;
   }
-  .our-story{
+  .our-story {
     width: 100% !important;
   }
-  .aboutus-page p{
-    text-align: justify ;
+  .aboutus-page p {
+    text-align: justify;
   }
-  .leadership1-card{
+  .leadership1-card {
     width: 98% !important;
     padding: 10px !important;
   }
-  .leadership1-card h3{
+  .leadership1-card h3 {
     font-size: 1rem;
   }
-  .leadership1-card p{
+  .leadership1-card p {
     font-size: 0.9rem;
   }
-  .aboutus-page{
+  .aboutus-page {
     width: 90% !important;
   }
-  .leadership1{
+  .leadership1 {
     justify-content: center !important;
   }
-  .leadership1-card > div:last-child{
+  .leadership1-card > div:last-child {
     max-width: 50% !important;
   }
-  .leadership1-card p{
+  .leadership1-card p {
     text-align: left;
   }
-  .leadership2-card{
+  .leadership2-card {
     flex-flow: column;
     padding: 60px 10px !important;
   }
-  .leadership2-card-left{
+  .leadership2-card-left {
     width: 100% !important;
     margin-bottom: 30px;
   }
-  .leadership2-card-right{
+  .leadership2-card-right {
     width: 100% !important;
   }
-  .aboutus-page h2{
+  .aboutus-page h2 {
     text-align: center;
     font-size: 2rem !important;
   }
-  .aic-mit{
+  .aic-mit {
     flex-flow: column-reverse;
   }
-  .aic-mit-right{
+  .aic-mit-right {
     width: 100% !important;
     margin-bottom: 30px;
   }
-  .aic-mit-left{
+  .aic-mit-left {
     width: 100% !important;
   }
-  .gallery::before{
+  .gallery::before {
     display: none;
   }
-  .gallery{
+  .gallery {
     min-height: 50vh !important;
   }
-  .image-gallery{
+  .image-gallery {
     width: 90% !important;
   }
-  .aic-mit::before{
+  .aic-mit::before {
     display: none;
   }
-  .services-right > p{
+  .services-right > p {
     font-size: 1rem !important;
     text-align: justify !important;
   }
-  .card-inner{
+  .card-inner {
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
     padding: 10px;
   }
-  .front,.back{
+  .front,
+  .back {
     position: relative !important;
     margin-bottom: 20px;
   }
-  .back{
+  .back {
     transform: rotateY(0) !important;
   }
-  .web-app2-card{
+  .web-app2-card {
     height: 400px !important;
   }
-  .web-app2-card:hover .card-inner{
+  .web-app2-card:hover .card-inner {
     transform: rotateY(0) !important;
   }
-  .career{
+  .career {
     margin: 0 !important;
     margin-bottom: 20px !important;
   }
-  .careers-page h1{
+  .careers-page h1 {
     padding: 4rem 2rem !important;
     font-size: 3rem !important;
   }
-  .image-gallery-slide{
+  .image-gallery-slide {
     height: 200px !important;
   }
-  .careers-main{
+  .careers-main {
     width: 90% !important;
   }
-  .career{
+  .career {
     width: 100% !important;
   }
   .contact p {
@@ -410,49 +411,77 @@
     padding: 5px;
     font-size: 1.2rem;
   }
-  .contact-us form{
+  .contact-us form {
     width: 90% !important;
     padding: 1.5rem !important;
   }
-  .form-row{
+  .form-row {
     flex-flow: column;
     margin-bottom: 0 !important;
   }
-  .form-field{
+  .form-field {
     width: 100% !important;
     margin-bottom: 20px !important;
   }
-  .finance,.marketing,.sales,.supplychain{
+  .finance,
+  .marketing,
+  .sales,
+  .supplychain {
     width: 90% !important;
   }
-  .finance-main,.marketing-main,.sales-main,.supplychain-main{
+  .finance-main,
+  .marketing-main,
+  .sales-main,
+  .supplychain-main {
     flex-flow: column-reverse;
   }
-  .finance-left,.marketing-left,.sales-left,.supplychain-left{
+  .finance-left,
+  .marketing-left,
+  .sales-left,
+  .supplychain-left {
     width: 100% !important;
   }
-  .finance-right,.marketing-right,.sales-right,.supplychain-right{
+  .finance-right,
+  .marketing-right,
+  .sales-right,
+  .supplychain-right {
     width: 100% !important;
   }
-  .finance ul,.marketing ul,.sales ul,.supplychain ul{
+  .finance ul,
+  .marketing ul,
+  .sales ul,
+  .supplychain ul {
     width: 90%;
   }
-  .finance h1,.marketing h1,.sales h1,.supplychain h1{
+  .finance h1,
+  .marketing h1,
+  .sales h1,
+  .supplychain h1 {
     font-size: 1.7rem !important;
     padding: 2rem 0 !important;
   }
-  .services-page-main{
+  .services-page-main {
     width: 100% !important;
     align-items: center;
     justify-content: center;
     margin-top: 3rem !important;
   }
-  .service-card{
+  .service-card {
     width: 300px !important;
     height: 300px !important;
   }
-  .service-card img{
+  .service-card img {
     width: 300px !important;
     height: 300px !important;
+  }
+  .anim-circle1,
+  .anim-circle2,
+  .anim-circle3,
+  .anim-triangle1,
+  .anim-triangle2,
+  .anim-triangle3,
+  .anim-triangle4,
+  .anim-triangle5 {
+    display: none;
   }
 }

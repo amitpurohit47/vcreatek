@@ -3,13 +3,19 @@ import "./Contact.css";
 
 const Contact = () => {
   return (
-    <section className="contact-us" id="contact-us">
-      <h2>Contact Us</h2>
-      <h3>
+    <section
+      className="contact-us"
+      id="contact-us"
+      onMouseMove={() =>
+        (document.querySelector(".header-info").style.display = "none")
+      }
+    >
+      <h2 data-aos="flip-up">Contact Us</h2>
+      <h3 data-aos="flip-up">
         We are a team of experienced IT specialists, ready to solve your issues.
         Let`s talk
       </h3>
-      <form>
+      <form data-aos="zoom-in">
         <div className="form-row">
           <div className="form-field">
             <label>Full Name *</label>
@@ -104,6 +110,46 @@ const Contact = () => {
         </div>
         <button type="submit">Submit</button>
       </form>
+        <img
+          src="https://www.vcreatek.com/wp-content/uploads/2019/11/purple_bubble.png"
+          alt="anim"
+          className="anim-circle1"
+        />
+        <img
+          src="https://www.vcreatek.com/wp-content/uploads/2019/11/purple_bubble.png"
+          alt="anim"
+          className="anim-circle2"
+        />
+        <img
+          src="https://www.vcreatek.com/wp-content/uploads/2019/11/purple_bubble.png"
+          alt="anim"
+          className="anim-circle3"
+        />
+        <img
+          src="https://www.vcreatek.com/wp-content/uploads/2019/11/orange_triangle2.png"
+          alt="anim"
+          className="anim-triangle1"
+        />
+        <img
+          src="https://www.vcreatek.com/wp-content/uploads/2019/11/orange_triangle2.png"
+          alt="anim"
+          className="anim-triangle2"
+        />
+        <img
+          src="https://www.vcreatek.com/wp-content/uploads/2019/11/orange_triangle2.png"
+          alt="anim"
+          className="anim-triangle3"
+        />
+        <img
+          src="https://www.vcreatek.com/wp-content/uploads/2019/11/orange_triangle-1.png"
+          alt="anim"
+          className="anim-triangle4"
+        />
+        <img
+          src="https://www.vcreatek.com/wp-content/uploads/2019/11/orange_triangle-1.png"
+          alt="anim"
+          className="anim-triangle5"
+        />
     </section>
   );
 };

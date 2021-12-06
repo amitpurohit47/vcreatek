@@ -94,6 +94,8 @@ const About = () => {
     window.removeEventListener("scroll", handleScroll);
   });
 
+  
+
   return (
     <div
       className="aboutus-page"

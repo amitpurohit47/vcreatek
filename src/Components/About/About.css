@@ -51,6 +51,7 @@
   opacity: 0.1;
   top: 100px;
   border-radius: 100%;
+  animation: updownabout 4s infinite alternate linear;
 }
 
 .leadership1-card {
@@ -128,13 +129,14 @@
   position: absolute;
   width: 600px;
   height: 600px;
-  opacity: 0.5;
+  opacity: 1;
   z-index: -1;
   top: -50%;
   background-color: aliceblue;
   content: "";
   border-radius: 100%;
   transform: rotate(30deg);
+  animation: updownabout 4s infinite alternate linear;
 }
 
 .life-vcreatek::after{
@@ -149,6 +151,7 @@
   content: "";
   border-radius: 100%;
   transform: rotate(30deg);
+  animation: leftrightabout 4s infinite alternate linear;
 }
 
 .life-vcreatek p {
@@ -174,6 +177,7 @@
   border-radius: 100%;
   left: -10%;
   bottom: -80%;
+  animation: updownabout 4s infinite alternate linear;
 }
 
 .aic-mit-left {
@@ -217,6 +221,7 @@
   background-color: forestgreen;
   opacity: 0.1;
   z-index: -1;
+  animation: leftrightabout 4s infinite alternate linear;
 }
 
 .image-gallery{
@@ -242,6 +247,7 @@
   content: "";
   z-index: -1;
   border-radius: 100%;
+  animation: updownabout 4s infinite alternate linear;
 }
 
 .leadership1:after {
@@ -255,4 +261,21 @@
   border-radius: 100%;
   right: 10%;
   top: 180%;
+  animation: leftrightabout 4s infinite alternate linear;
+}
+
+@keyframes updownabout {
+  from{
+    transform: translateY(-10%);
+  }to{
+    transform: translateY(10%);
+  }
+}
+
+@keyframes leftrightabout {
+  from{
+    transform: translateX(-50%);
+  }to{
+    transform: translateX(50%);
+  }
 }

@@ -6,7 +6,6 @@ import homeicon3 from "../../Assets/Images/home2_icon3.png";
 import homeicon4 from "../../Assets/Images/home2_icon4.png";
 import zigzag from "../../Assets/Images/zigzag.jpeg";
 import landing1 from "../../Assets/Images/landing1.jpeg";
-import quote from "../../Assets/Images/quote.png";
 import testimonial from "../../Assets/Images/testimonial.svg";
 import whychooseus from "../../Assets/Images/whychooseus.jpeg";
 import contactus1 from "../../Assets/Images/contactus1.jpg";
@@ -79,20 +78,19 @@ const Landing = () => {
       }
     };
 
-    setInterval(()=>{
+    setInterval(() => {
       const wanted = document.getElementsByName("item");
       for (var i = 0; i < wanted.length; ++i) {
         if (wanted[i].checked === true) {
-            if (i === wanted.length - 1)
-            {
-                wanted[0].checked = true;
-            } else {
-                wanted[i + 1].checked = true;
-            }
-            break;
+          if (i === wanted.length - 1) {
+            wanted[0].checked = true;
+          } else {
+            wanted[i + 1].checked = true;
+          }
+          break;
         }
-    }
-    },3500);
+      }
+    }, 3500);
 
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -107,7 +105,9 @@ const Landing = () => {
       </div>
       <div className="why-choose-us">
         <h4 data-aos="flip-up">WHY CHOOSE US</h4>
-        <h1 data-aos="flip-up">A Business Consulting Company That Can Produce Anything.</h1>
+        <h1 data-aos="flip-up">
+          A Business Consulting Company That Can Produce Anything.
+        </h1>
         <div className="landing-cards" data-aos="fade-up">
           <div className="landing-card">
             <div
@@ -272,7 +272,7 @@ const Landing = () => {
         </h4>
         <div className="counters-inner">
           <img src={landing1} alt="landing1" data-aos="zoom-in" />
-          <div className="counters-main"  data-aos="zoom-in">
+          <div className="counters-main" data-aos="zoom-in">
             <div className="counter">
               <p className="counter-number">100</p>
               <h5>TEAM SIZE</h5>
@@ -331,7 +331,7 @@ const Landing = () => {
           </div>
         </div>
       </div>
-      <div className="testimonials" >
+      <div className="testimonials">
         <h3 data-aos="flip-up">TESTIMONIALS</h3>
         <h1 data-aos="flip-up">This Is Why We Do What We Do</h1>
         <img src={testimonial} alt="testimonial" />
@@ -352,140 +352,139 @@ const Landing = () => {
             className="mySwiper"
           >
             <SwiperSlide>
-              <img src={quote} alt="quote" />
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Adipisci rerum dolor totam nobis accusantium omnis iste
-                molestias! Vel obcaecati animi nihil laboriosam similique
-                voluptatem, laudantium id a ipsam cupiditate ad?
-              </p>
-              <div className="swiperslide-footer">
-                <img src={homeicon1} alt="testimonial" />
-                <div className="testimonial-info">
-                  <h3>Name</h3>
-                  <h4>Designation</h4>
-                </div>
+              <div className="testimonial-header">
+                <img src="https://www.vcreatek.com/wp-content/uploads/2020/05/Senior-Director-Pfizer-Digital-150x150.jpg" alt="quote" />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Adipisci rerum dolor totam nobis accusantium omnis iste
+                  molestias! Vel obcaecati animi nihil laboriosam similique
+                  voluptatem, laudantium id a ipsam cupiditate ad?
+                </p>
+              </div>
+              <div className="testimonial-info">
+                <h3>Name</h3>
+                <h4>Designation</h4>
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <img src={quote} alt="quote" />
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Adipisci rerum dolor totam nobis accusantium omnis iste
-                molestias! Vel obcaecati animi nihil laboriosam similique
-                voluptatem, laudantium id a ipsam cupiditate ad?
-              </p>
-              <div className="swiperslide-footer">
-                <img src={homeicon1} alt="testimonial" />
-                <div className="testimonial-info">
-                  <h3>Name</h3>
-                  <h4>Designation</h4>
-                </div>
+              <div className="testimonial-header">
+                <img src="https://www.vcreatek.com/wp-content/uploads/2020/05/Senior-Director-Pfizer-Digital-150x150.jpg" alt="quote" />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Adipisci rerum dolor totam nobis accusantium omnis iste
+                  molestias! Vel obcaecati animi nihil laboriosam similique
+                  voluptatem, laudantium id a ipsam cupiditate ad?
+                </p>
+              </div>
+              <div className="testimonial-info">
+                <h3>Name</h3>
+                <h4>Designation</h4>
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <img src={quote} alt="quote" />
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Adipisci rerum dolor totam nobis accusantium omnis iste
-                molestias! Vel obcaecati animi nihil laboriosam similique
-                voluptatem, laudantium id a ipsam cupiditate ad?
-              </p>
-              <div className="swiperslide-footer">
-                <img src={homeicon1} alt="testimonial" />
-                <div className="testimonial-info">
-                  <h3>Name</h3>
-                  <h4>Designation</h4>
-                </div>
+              <div className="testimonial-header">
+                <img src="https://www.vcreatek.com/wp-content/uploads/2020/05/Senior-Director-Pfizer-Digital-150x150.jpg" alt="quote" />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Adipisci rerum dolor totam nobis accusantium omnis iste
+                  molestias! Vel obcaecati animi nihil laboriosam similique
+                  voluptatem, laudantium id a ipsam cupiditate ad?
+                </p>
+              </div>
+              <div className="testimonial-info">
+                <h3>Name</h3>
+                <h4>Designation</h4>
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <img src={quote} alt="quote" />
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Adipisci rerum dolor totam nobis accusantium omnis iste
-                molestias! Vel obcaecati animi nihil laboriosam similique
-                voluptatem, laudantium id a ipsam cupiditate ad?
-              </p>
-              <div className="swiperslide-footer">
-                <img src={homeicon1} alt="testimonial" />
-                <div className="testimonial-info">
-                  <h3>Name</h3>
-                  <h4>Designation</h4>
-                </div>
+              <div className="testimonial-header">
+                <img src="https://www.vcreatek.com/wp-content/uploads/2020/05/Senior-Director-Pfizer-Digital-150x150.jpg" alt="quote" />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Adipisci rerum dolor totam nobis accusantium omnis iste
+                  molestias! Vel obcaecati animi nihil laboriosam similique
+                  voluptatem, laudantium id a ipsam cupiditate ad?
+                </p>
+              </div>
+              <div className="testimonial-info">
+                <h3>Name</h3>
+                <h4>Designation</h4>
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <img src={quote} alt="quote" />
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Adipisci rerum dolor totam nobis accusantium omnis iste
-                molestias! Vel obcaecati animi nihil laboriosam similique
-                voluptatem, laudantium id a ipsam cupiditate ad?
-              </p>
-              <div className="swiperslide-footer">
-                <img src={homeicon1} alt="testimonial" />
-                <div className="testimonial-info">
-                  <h3>Name</h3>
-                  <h4>Designation</h4>
-                </div>
+              <div className="testimonial-header">
+                <img src="https://www.vcreatek.com/wp-content/uploads/2020/05/Senior-Director-Pfizer-Digital-150x150.jpg" alt="quote" />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Adipisci rerum dolor totam nobis accusantium omnis iste
+                  molestias! Vel obcaecati animi nihil laboriosam similique
+                  voluptatem, laudantium id a ipsam cupiditate ad?
+                </p>
+              </div>
+              <div className="testimonial-info">
+                <h3>Name</h3>
+                <h4>Designation</h4>
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <img src={quote} alt="quote" />
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Adipisci rerum dolor totam nobis accusantium omnis iste
-                molestias! Vel obcaecati animi nihil laboriosam similique
-                voluptatem, laudantium id a ipsam cupiditate ad?
-              </p>
-              <div className="swiperslide-footer">
-                <img src={homeicon1} alt="testimonial" />
-                <div className="testimonial-info">
-                  <h3>Name</h3>
-                  <h4>Designation</h4>
-                </div>
+              <div className="testimonial-header">
+                <img src="https://www.vcreatek.com/wp-content/uploads/2020/05/Senior-Director-Pfizer-Digital-150x150.jpg" alt="quote" />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Adipisci rerum dolor totam nobis accusantium omnis iste
+                  molestias! Vel obcaecati animi nihil laboriosam similique
+                  voluptatem, laudantium id a ipsam cupiditate ad?
+                </p>
+              </div>
+              <div className="testimonial-info">
+                <h3>Name</h3>
+                <h4>Designation</h4>
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <img src={quote} alt="quote" />
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Adipisci rerum dolor totam nobis accusantium omnis iste
-                molestias! Vel obcaecati animi nihil laboriosam similique
-                voluptatem, laudantium id a ipsam cupiditate ad?
-              </p>
-              <div className="swiperslide-footer">
-                <img src={homeicon1} alt="testimonial" />
-                <div className="testimonial-info">
-                  <h3>Name</h3>
-                  <h4>Designation</h4>
-                </div>
+              <div className="testimonial-header">
+                <img src="https://www.vcreatek.com/wp-content/uploads/2020/05/Senior-Director-Pfizer-Digital-150x150.jpg" alt="quote" />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Adipisci rerum dolor totam nobis accusantium omnis iste
+                  molestias! Vel obcaecati animi nihil laboriosam similique
+                  voluptatem, laudantium id a ipsam cupiditate ad?
+                </p>
+              </div>
+              <div className="testimonial-info">
+                <h3>Name</h3>
+                <h4>Designation</h4>
               </div>
             </SwiperSlide>
+           
           </Swiper>
         </div>
       </div>
       <div className="why-choose-us2">
         <img src={whychooseus} alt="whychooseus" data-aos="zoom-in" />
-        <div className="why-choose-us2-inner"  data-aos="zoom-in">
+        <div className="why-choose-us2-inner" data-aos="zoom-in">
           <h4>WHY CHOOSE US</h4>
           <h1>Drive More Customers Through Data Analytics</h1>
           <p>
             We combine the best of human and artificial intelligence to power
             possibilities for individuals, organisations and society
           </p>
-          <button><span>Read More</span><img src={next} alt="next" /></button>
+          <button>
+            <span>Read More</span>
+            <img src={next} alt="next" />
+          </button>
         </div>
       </div>
       <div className="more-info">
         <div className="more-info-left">
-          <h1 data-aos="flip-up" data-aos-delay="800">Looking for Best Analytics & Automation Services ?</h1>
-          <p  data-aos="flip-up" data-aos-delay="800">
+          <h1 data-aos="flip-up">
+            Looking for Best Analytics & Automation Services ?
+          </h1>
+          <p data-aos="flip-up">
             We have 40+ experts in Advance Technology which will change the way
             you work. Request for a call today.
           </p>
-          <button  data-aos="fade-up" data-aos-delay="800">
+          <button data-aos="fade-up">
             <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>
               Get In Touch
             </Link>
@@ -493,12 +492,12 @@ const Landing = () => {
           </button>
         </div>
         <div className="more-info-right">
-          <img src={contactus1} alt="contactus" data-aos="zoom-in" data-aos-delay="800" />
-          <img src={contactus3} alt="contactus" data-aos="zoom-in" data-aos-delay="800" />
-          <img src={contactus2} alt="contactus" data-aos="zoom-in" data-aos-delay="800" />
-          <img src={contactus6} alt="contactus" data-aos="zoom-in" data-aos-delay="800" />
-          <img src={contactus4} alt="contactus" data-aos="zoom-in" data-aos-delay="800" />
-          <img src={contactus5} alt="contactus" data-aos="zoom-in" data-aos-delay="800" />
+          <img src={contactus1} alt="contactus" data-aos="zoom-in" />
+          <img src={contactus3} alt="contactus" data-aos="zoom-in" />
+          <img src={contactus2} alt="contactus" data-aos="zoom-in" />
+          <img src={contactus6} alt="contactus" data-aos="zoom-in" />
+          <img src={contactus4} alt="contactus" data-aos="zoom-in" />
+          <img src={contactus5} alt="contactus" data-aos="zoom-in" />
         </div>
       </div>
     </div>

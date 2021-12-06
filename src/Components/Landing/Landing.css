@@ -159,6 +159,7 @@
   font-size: 1.2rem;
   width: 100%;
   text-align: justify;
+  color: #6b6d7e;
 }
 
 .core-values h4 {
@@ -171,7 +172,7 @@
 .core-values h1 {
   font-size: 3rem;
   margin-bottom: 30px;
-  color: black;
+  color: #163967;
   width: 100%;
 }
 
@@ -343,6 +344,7 @@ input[type="radio"]#section5:checked ~ .cover {
   text-align: center;
   margin-bottom: 30px;
   width: 75%;
+  color: #163967;
 }
 
 .counters-inner {
@@ -369,6 +371,11 @@ input[type="radio"]#section5:checked ~ .cover {
   align-items: center;
   justify-content: center;
   margin: 10px;
+}
+
+.counter h5{
+  color: #6b6d7e;
+  letter-spacing: 1px;
 }
 
 .counter-number {
@@ -467,6 +474,26 @@ input[type="radio"]#section5:checked ~ .cover {
   overflow: hidden;
 }
 
+.testimonial-header{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.testimonial-header img{
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  margin-bottom: 20px;
+}
+
+.testimonial-info h3{
+  font-size: 1.2rem;
+  color: #163967;
+}
+
 .swiper {
   width: 100%;
   padding-top: 50px;
@@ -483,7 +510,6 @@ input[type="radio"]#section5:checked ~ .cover {
   border-radius: 10px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
   padding: 20px;
-  padding-top: 60px;
   background: white;
 }
 
@@ -561,10 +587,15 @@ input[type="radio"]#section5:checked ~ .cover {
   margin-bottom: 20px;
 }
 
+.why-choose-us2-inner h4{
+  color: #F3541E;
+}
+
 .why-choose-us2-inner p{
   text-align: center;
   font-size: 1.2rem;
   margin-bottom: 20px;
+  color: #6b6d7e;
 }
 
 .why-choose-us2-inner button{
@@ -653,7 +684,7 @@ input[type="radio"]#section5:checked ~ .cover {
 
 .more-info-left button a{
   text-decoration: none;
-  color: black;
+  color: #163967;
 }
 
 

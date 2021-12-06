@@ -22,22 +22,22 @@ const Services = () => {
                     <h3>Data & Cloud Services</h3>
                 </div>
             </Link>
+            <Link to="/smart-analytics" data-aos="fade-up">
+                <div className="service-card" style={{height : '350px'}}>
+                    <img src={smart} alt="smart analytics" />
+                    <h3>Smart Analytics</h3>
+                </div>
+            </Link>
             <Link to="/webapp" data-aos="fade-up">
-                <div className="service-card">
+                <div className="service-card" style={{height : '300px',marginTop : '40px'}}>
                     <img src={webapp} alt="webapp" />
                     <h3>Web Application Services</h3>
                 </div>
             </Link>
             <Link to="/research-lab" data-aos="fade-up">
-                <div className="service-card">
+                <div className="service-card" style={{marginTop : '-80px'}}>
                     <img src={research} alt="research" />
                     <h3>Research & Lab</h3>
-                </div>
-            </Link>
-            <Link to="/smart-analytics" data-aos="fade-up">
-                <div className="service-card">
-                    <img src={smart} alt="smart analytics" />
-                    <h3>Smart Analytics</h3>
                 </div>
             </Link>
         </div>

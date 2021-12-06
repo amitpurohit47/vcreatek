@@ -87,14 +87,14 @@ a.header-link {
   content: "";
   left: 0;
   bottom: -25px;
-  background-color: #fb8500;
+  background-color: #F3541E;
   width: 0%;
   height: 3px;
   transition: 200ms ease-in-out;
 }
 
 .header-info {
-  display: flex;
+  display: none;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   justify-content: space-around;
   padding: 2rem;
@@ -138,13 +138,13 @@ a.header-link {
 
 .header-info p:hover {
   box-shadow: rgba(251, 133, 0, 0.2) 0px 5px 10px;
-  background-color: #fb8500;
+  background-color: #F3541E;
   color: white;
 }
 
 .header-info a:hover {
   box-shadow: rgba(251, 133, 0, 0.2) 0px 5px 10px;
-  background-color: #fb8500;
+  background-color: #F3541E;
   color: white;
 }
 

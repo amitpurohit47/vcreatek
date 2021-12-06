@@ -10,6 +10,7 @@
   width: 100%;
   position: relative;
   color: white;
+  min-height: 80vh;
 }
 .researchlab1::before {
   position: absolute;
@@ -109,9 +110,12 @@
 
 .researchlab-page>h1{
     font-size: 3rem;
+    margin: auto;
     margin-top: 7rem;
-    text-align: center;
+    text-align: left;
     margin-bottom: 30px;
+    color: #F3541E;
+    width: 80%;
 }
 
 .researchlab3{
@@ -145,9 +149,11 @@
 }
 
 .researchlab4 h1{
-    text-align: center;
+  color: #F3541E;
     font-size: 3rem;
+    margin: auto;
     margin-bottom: 3rem;
+    width: 100%;
 }
 
 .researchlab4 ul{
