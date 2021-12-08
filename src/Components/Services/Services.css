@@ -65,18 +65,20 @@
   justify-content: center;
   text-align: center;
   opacity: 0;
-  transition: opacity .4s cubic-bezier(.12,.65,.4,1);
+  transition: all .4s cubic-bezier(.12,.65,.4,1);
+  font-size: 0;
 }
 
 .service-card:hover h3{
     opacity: 1;
+    font-size: 1rem;
 }
 
 .service-card:hover img{
     transform: scale(1.07);
 }
 
-.services-page-main h3:before {
+.service-card h3:before {
     position: absolute;
     top: 7%;
     left: 7%;
@@ -85,9 +87,5 @@
     height: 80%;
     margin: auto;
     z-index: 1;
-    border: 0px solid white;
-}
-
-.services-card:hover h3:before{
     border: 10px solid white;
 }
