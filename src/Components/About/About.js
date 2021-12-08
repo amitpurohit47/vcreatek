@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import aicmit from "../../Assets/Images/aicmit.jpeg";
 import ImageGallery from "react-image-gallery";
 import gallery1 from "../../Assets/Images/1.jpg";
@@ -11,7 +11,7 @@ import gallery8 from "../../Assets/Images/8.jpg";
 import gallery9 from "../../Assets/Images/9.jpg";
 import gallery10 from "../../Assets/Images/10.jpg";
 import gallery12 from "../../Assets/Images/12.jpg";
-import $ from "jquery";
+// import $ from "jquery";
 import "./About.css";
 
 const About = () => {
@@ -58,41 +58,7 @@ const About = () => {
     },
   ];
 
-  useEffect(() => {
-    let viewed = false;
-    function isScrolledIntoView(elem) {
-      var docViewTop = $(window).scrollTop();
-      var docViewBottom = docViewTop + $(window).height() + 400;
-
-      var elemTop = $(elem).offset().top;
-      var elemBottom = elemTop + $(elem).height();
-
-      return elemBottom <= docViewBottom && elemTop >= docViewTop;
-    }
-
-    const handleScroll = () => {
-      if (isScrolledIntoView($(".counters-inner")) && !viewed) {
-        viewed = true;
-        $(".counter-number").each(function () {
-          $(this)
-            .prop("Counter", 0)
-            .animate(
-              {
-                Counter: $(this).text(),
-              },
-              {
-                duration: 2000,
-                easing: "swing",
-                step: function (now) {
-                  $(this).text(Math.ceil(now));
-                },
-              }
-            );
-        });
-      }
-    };
-    window.removeEventListener("scroll", handleScroll);
-  });
+  
 
   
 

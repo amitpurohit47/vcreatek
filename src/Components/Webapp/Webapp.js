@@ -1,49 +1,14 @@
-import React, { useEffect } from "react";
+import React from "react";
 import webapp from "../../Assets/Images/webapp.png";
 import wave2 from "../../Assets/Images/wave2.svg";
 import stack from "../../Assets/Images/stack.png";
 import maintenance from "../../Assets/Images/maintenance.png";
 import agile from "../../Assets/Images/agile.png";
 import api from "../../Assets/Images/api.png";
-import $ from "jquery";
 import "./Webapp.css";
 
 const Webapp = () => {
-  useEffect(() => {
-    let viewed = false;
-    function isScrolledIntoView(elem) {
-      var docViewTop = $(window).scrollTop();
-      var docViewBottom = docViewTop + $(window).height() + 400;
-
-      var elemTop = $(elem).offset().top;
-      var elemBottom = elemTop + $(elem).height();
-
-      return elemBottom <= docViewBottom && elemTop >= docViewTop;
-    }
-
-    const handleScroll = () => {
-      if (isScrolledIntoView($(".counters-inner")) && !viewed) {
-        viewed = true;
-        $(".counter-number").each(function () {
-          $(this)
-            .prop("Counter", 0)
-            .animate(
-              {
-                Counter: $(this).text(),
-              },
-              {
-                duration: 2000,
-                easing: "swing",
-                step: function (now) {
-                  $(this).text(Math.ceil(now));
-                },
-              }
-            );
-        });
-      }
-    };
-    window.removeEventListener("scroll", handleScroll);
-  });
+  
 
   return (
     <div

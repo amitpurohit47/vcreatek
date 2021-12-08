@@ -71,6 +71,7 @@
   }
   .testimonials h1 {
     font-size: 2rem;
+    text-align: left !important;
   }
   .counter h5 {
     text-align: center;
@@ -87,6 +88,7 @@
   }
   .core-values h1 {
     font-size: 2rem;
+    text-align: left !important;
   }
   .why-choose-us2 {
     flex-flow: column;
@@ -483,5 +485,16 @@
   .anim-triangle4,
   .anim-triangle5 {
     display: none;
+  }
+  .blog-main{
+    flex-flow: column;
+    justify-content: center;
+  }
+  .blog{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .clients-main{
+    justify-content: center !important;
   }
 }

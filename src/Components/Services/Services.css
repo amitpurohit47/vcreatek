@@ -1,59 +1,93 @@
-.services-page{
-    padding-top: 5rem;
+.services-page {
+  padding-top: 5rem;
 }
 
-.services-page h1{
-    font-size: 3rem;
-    color: #F3541E;
-    width: 80%;
-    margin: auto;
-    padding-top: 3rem;
+.services-page h1 {
+  font-size: 3rem;
+  color: #f3541e;
+  width: 90%;
+  margin: auto;
+  padding-top: 3rem;
 }
 
-.services-page-main{
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    margin-top: 6rem;
-    justify-content: space-between;
-    width: 80%;
+.services-page-main {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 6rem;
+  justify-content: space-between;
+  width: 90%;
 }
 
-.services-page-main a{
-    text-decoration: none;
-    color: black;
+.services-page-main a {
+  text-decoration: none;
+  color: white;
 }
 
-.service-card{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    width: 450px;
-    height: 450px;
-    margin-bottom: 2rem;
+.service-card {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  height: 300px;
+  margin-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.service-card:nth-child(2){
-    transform: translateY(20px);
+.service-card:nth-child(2) {
+  transform: translateY(20px);
 }
 
-.service-card img{
-    width: 450px;
-    height: 450px;
+.service-card img {
+  width: 300px;
+  height: 300px;
+  transform: scale(1);
+  transition: .4s cubic-bezier(.12,.65,.4,1);
 }
 
-.service-card h3{
-    width: 70%;
-    text-align: center;
-    background-color: white;
-    padding: 20px 10px;
-    margin-top: -30px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    transform: translateY(0);
-    transition: 200ms ease-in-out;
+.services-page-main h3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  z-index: 1;
+  background-image: linear-gradient(
+    320deg,
+    rgba(87, 185, 87, 0.8) 0%,
+    rgba(38, 4, 229, 0.8) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .4s cubic-bezier(.12,.65,.4,1);
 }
 
 .service-card:hover h3{
-    transform: translateY(-30px);
+    opacity: 1;
+}
+
+.service-card:hover img{
+    transform: scale(1.07);
+}
+
+.services-page-main h3:before {
+    position: absolute;
+    top: 7%;
+    left: 7%;
+    content: '';
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    z-index: 1;
+    border: 0px solid white;
+}
+
+.services-card:hover h3:before{
+    border: 10px solid white;
 }
