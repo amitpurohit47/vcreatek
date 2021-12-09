@@ -103,7 +103,7 @@ const Header = () => {
     },
     {
       linkname: "Contact Us",
-      subdata: ["Reach Us", "Careers", "Business Opportunities"],
+      subdata: [ "Careers", "Business Opportunities"],
     },
   ];
 
