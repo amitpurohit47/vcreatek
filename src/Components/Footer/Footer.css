@@ -104,3 +104,10 @@
 .footer2 p{
     font-size: 15px;
 }
+
+.footer2 a{
+    display: block;
+    text-decoration: none;
+    color: #6b6d7e;
+}
+

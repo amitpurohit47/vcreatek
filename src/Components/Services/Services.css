@@ -4,10 +4,10 @@
 
 .services-page h1 {
   font-size: 3rem;
-  color: #f3541e;
-  width: 90%;
+  background-color: #f3541e;
+  color: white;
   margin: auto;
-  padding-top: 3rem;
+  padding: 5rem;
 }
 
 .services-page-main {
@@ -57,8 +57,8 @@
   z-index: 1;
   background-image: linear-gradient(
     320deg,
-    rgba(87, 185, 87, 0.8) 0%,
-    rgba(38, 4, 229, 0.8) 100%
+    rgba(238, 124, 49, 0.8) 0%,
+    rgba(243,84,30, 0.8) 100%
   );
   display: flex;
   align-items: center;

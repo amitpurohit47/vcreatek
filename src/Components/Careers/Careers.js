@@ -11,44 +11,44 @@ const Careers = () => {
         (document.querySelector(".header-info").style.display = "none")
       }
     >
-      <h1>Careers</h1>
+      <h1><span data-aos="flip-up">Careers</span></h1>
       <div className="careers-main">
-        <div className="career">
+        <div className="career" data-aos="zoom-in">
           <h2>Position</h2>
           <p>Pune</p>
           <h5>Know More</h5>
         </div>
-        <div className="career">
+        <div className="career" data-aos="zoom-in">
           <h2>Position</h2>
           <p>Pune</p>
           <h5>Know More</h5>
         </div>
-        <div className="career">
+        <div className="career" data-aos="zoom-in">
           <h2>Position</h2>
           <p>Pune</p>
           <h5>Know More</h5>
         </div>
-        <div className="career">
+        <div className="career" data-aos="zoom-in">
           <h2>Position</h2>
           <p>Pune</p>
           <h5>Know More</h5>
         </div>
-        <div className="career">
+        <div className="career" data-aos="zoom-in">
           <h2>Position</h2>
           <p>Pune</p>
           <h5>Know More</h5>
         </div>
-        <div className="career">
+        <div className="career" data-aos="zoom-in">
           <h2>Position</h2>
           <p>Pune</p>
           <h5>Know More</h5>
         </div>
-        <div className="career">
+        <div className="career" data-aos="zoom-in">
           <h2>Position</h2>
           <p>Pune</p>
           <h5>Know More</h5>
         </div>
-        <div className="career">
+        <div className="career" data-aos="zoom-in">
           <h2>Position</h2>
           <p>Pune</p>
           <h5>Know More</h5>

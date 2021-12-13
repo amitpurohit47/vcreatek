@@ -115,7 +115,15 @@ const Landing = () => {
       onMouseMove={animateBulb}
     >
       <div className="landing-main">
-        <Hero />
+        <Hero
+          title="Why Choose vCreaTek?"
+          contents={[
+            "160+ Team Members",
+            "7+ Countries Served",
+            "45+ Projects Delivered",
+            "10+ Delighted Customers",
+          ]}
+        />
       </div>
       <div className="know-more">
         <div className="know-more-left">

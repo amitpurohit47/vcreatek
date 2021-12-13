@@ -1,15 +1,14 @@
 import React from "react";
-import webapp from "../../Assets/Images/webapp.png";
-import wave2 from "../../Assets/Images/wave2.svg";
-import stack from "../../Assets/Images/stack.png";
-import maintenance from "../../Assets/Images/maintenance.png";
-import agile from "../../Assets/Images/agile.png";
-import api from "../../Assets/Images/api.png";
+import Hero from "../Landing/Hero/Hero";
+// import webapp from "../../Assets/Images/webapp.png";
+// import wave2 from "../../Assets/Images/wave2.svg";
+// import stack from "../../Assets/Images/stack.png";
+// import maintenance from "../../Assets/Images/maintenance.png";
+// import agile from "../../Assets/Images/agile.png";
+// import api from "../../Assets/Images/api.png";
 import "./Webapp.css";
 
 const Webapp = () => {
-  
-
   return (
     <div
       className="web-app-page"
@@ -17,7 +16,16 @@ const Webapp = () => {
         (document.querySelector(".header-info").style.display = "none")
       }
     >
-      <div className="web-app1">
+      <Hero
+        title={"Web Application Development"}
+        contents={[
+          "Full Stack Development",
+          "Application Support & Maintenance",
+          "Testing & Automation",
+          "Integration & API Development"
+        ]}
+      />
+      {/* <div className="web-app1">
         <div className="web-app1-left">
           <h1>Web Application Services</h1>
         </div>
@@ -84,7 +92,7 @@ const Webapp = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -5,7 +5,7 @@ import land3 from "../../../Assets/Images/land3.jpg";
 import land4 from "../../../Assets/Images/land4.jpg";
 import "./Hero.css";
 
-const Hero = () => {
+const Hero = ({title,contents}) => {
   useEffect(() => {
     class VerticalMouseDrivenCarousel {
       constructor(options = {}) {
@@ -141,7 +141,7 @@ const Hero = () => {
 
   return (
     <div className="hero">
-      <h1 className="hero-header">Why Choose vCreaTek?</h1>
+      <h1 className="hero-header">{title}</h1>
       <div className="container">
         <header className="c-header c-header--archive c-header--project-list">
           <div className="c-mouse-vertical-carousel js-carousel u-media-wrapper u-media-wrapper--16-9">
@@ -152,7 +152,7 @@ const Hero = () => {
               >
 
                   <p className="c-mouse-vertical-carousel__title u-a5">
-                  160+ Team Members
+                  {contents[0]}
                   </p>
               </li>
 
@@ -163,7 +163,7 @@ const Hero = () => {
                   
 
                   <p className="c-mouse-vertical-carousel__title u-a5">
-                  7+ Countries Served
+                  {contents[1]}
                   </p>
               </li>
 
@@ -174,7 +174,7 @@ const Hero = () => {
                   
 
                   <p className="c-mouse-vertical-carousel__title u-a5">
-                  45+ Projects Delivered
+                  {contents[2]}
                   </p>
               </li>
 
@@ -185,7 +185,7 @@ const Hero = () => {
                   
 
                   <p className="c-mouse-vertical-carousel__title u-a5">
-                  10+ Delighted Customers
+                  {contents[3]}
                   </p>
               </li>
 

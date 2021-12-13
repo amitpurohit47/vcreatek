@@ -147,6 +147,10 @@
     width: 100%;
     margin-bottom: 20px;
   }
+  .footer2-sec3,.footer2-sec4,.footer2-sec5{
+    width: 100% !important;
+    margin-top: 20px;
+}
   .copyright {
     font-size: 0.8rem !important;
   }

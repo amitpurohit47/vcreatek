@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import logo from "../../Assets/Images/vcreateklogo.png";
 import "./Footer.css";
 
@@ -61,17 +62,29 @@ const Footer = () => {
           </p>
         </div>
         <div className="footer2-sec3">
-          <h4>Quick Links</h4>
-          <p>About Us</p>
-          <p>Our Services</p>
-          <p>Products</p>
-          <p>Allinces</p>
-          <p>Events</p>
-          <p>Careers</p>
+          <h4>Services</h4>
+          <Link onClick={() => window.scrollTo(0,0)} to="/webapp">Web Development</Link>
+          <Link onClick={() => window.scrollTo(0,0)} to="/data-cloud">Cloud Services</Link>
+          <Link onClick={() => window.scrollTo(0,0)} to="/smart-analytics">Smart Analytics</Link>
+          <Link onClick={() => window.scrollTo(0,0)} to="/research-lab">Research & Lab</Link>
+          <Link onClick={() => window.scrollTo(0,0)} to="/design-studio">Design Studio</Link>
+        </div>
+        <div className="footer2-sec4">
+          <h4>About Us</h4>
+          <Link onClick={() => window.scrollTo(0,0)} to="/about">Our Story</Link>
+          <Link onClick={() => window.scrollTo(0,0)} to="/about">Leadership</Link>
+          <Link onClick={() => window.scrollTo(0,0)} to="/about">Life@vCreakTek</Link>
+          <Link onClick={() => window.scrollTo(0,0)} to="/about">AIC Incubator</Link>
+          <Link onClick={() => window.scrollTo(0,0)} to="/about">Gallery</Link>
+        </div>
+        <div className="footer2-sec5">
+          <h4>Contact Us</h4>
+          <Link onClick={() => window.scrollTo(0,0)} to="/careers">Careers</Link>
+          <Link onClick={() => window.scrollTo(0,0)} to="/contact">Business Opportunities</Link>
         </div>
       </div>
       <p className="copyright">
-        Copyright 2020 by vCreaTek LLC All Right Reserved.
+        Copyright 2022 by vCreaTek LLC All Right Reserved.
       </p>
     </div>
   );

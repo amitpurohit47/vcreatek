@@ -99,3 +99,21 @@
   height: 150px;
 }
 
+.web-app-page ul{
+  position: absolute;
+  width: 100%;
+  font-size: 20px;
+  top: 30%;
+}
+
+.web-app-page ul li{
+  padding-left: 55%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.web-app-page .hero-header{
+  left: 2%;
+  top: 40%;
+  font-size: 2.6rem !important;
+}
