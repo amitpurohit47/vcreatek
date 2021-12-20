@@ -16,7 +16,7 @@
   margin: auto;
   margin-top: 6rem;
   justify-content: space-between;
-  width: 90%;
+  width: 75%;
 }
 
 .services-page-main a {
@@ -29,9 +29,9 @@
   flex-flow: column;
   align-items: center;
   justify-content: space-between;
-  width: 300px;
-  height: 300px;
-  margin-bottom: 2rem;
+  width: 450px;
+  height: 450px;
+  margin-bottom: 4rem;
   position: relative;
   overflow: hidden;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -42,8 +42,8 @@
 }
 
 .service-card img {
-  width: 300px;
-  height: 300px;
+  width: 450px;
+  height: 450px;
   transform: scale(1);
   transition: .4s cubic-bezier(.12,.65,.4,1);
 }
@@ -52,8 +52,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 300px;
-  height: 300px;
+  width:450px;
+  height: 450px;
   z-index: 1;
   background-image: linear-gradient(
     320deg,
@@ -71,7 +71,7 @@
 
 .service-card:hover h3{
     opacity: 1;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .service-card:hover img{

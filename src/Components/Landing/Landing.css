@@ -81,6 +81,10 @@
   width: 95%;
 }
 
+.why-choose-us h1 p{
+  width: 50%;
+}
+
 .why-choose-us a{
   text-decoration: none;
   color: white;
@@ -190,6 +194,8 @@
 
 .landing-card p {
   color: #6b6d7e;
+  font-size: 12px;
+  width: 60%;
 }
 
 .core-values {
@@ -747,6 +753,7 @@ input[type="radio"]#section5:checked ~ .cover {
   width: 90%;
   margin: auto;
   margin-top: 6rem;
+  margin-bottom: 2.5rem;
 }
 
 .blogs h4{

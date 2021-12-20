@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import cloud from "../../Assets/Images/cloud.jpg";
 import wave1 from "../../Assets/Images/wave1.svg";
+import smart from "../../Assets/Images/smart-data.png";
 import "./Cloud.css";
 
 const Cloud = () => {
@@ -46,14 +47,14 @@ const Cloud = () => {
     },
   ];
 
-  const items = serviceInfo.map((service) => (
-    <div className="services-right">
-      <h1>{service.name}</h1>
-      <p>{service.info}</p>
-    </div>
-  ));
+  // const items = serviceInfo.map((service) => (
+  //   <div className="services-right">
+  //     <h1>{service.name}</h1>
+  //     <p>{service.info}</p>
+  //   </div>
+  // ));
 
-  const [currService, setCurrService] = useState(serviceInfo[0]);
+  // const [currService, setCurrService] = useState(serviceInfo[0]);
 
   return (
     <div
@@ -72,7 +73,17 @@ const Cloud = () => {
             <h1>Data & Cloud Services</h1>
         </div>
       </div>
-      <div className="services-main">
+      <div className="cloud-services">
+        {serviceInfo.map((info,i) =>
+         <div className="cloud-service" key={`cloud-service${i}`}>
+           <div className="cloud-service-info">
+             <img src={smart} alt="cloud-service" />
+            <h3><p>{info.info}</p></h3>
+           </div>
+           <h1>{info.name}</h1>
+         </div>)}
+      </div>
+      {/* <div className="services-main">
         <div className="services-left">
           {serviceInfo.map((service, i) => (
             <p
@@ -91,7 +102,7 @@ const Cloud = () => {
           <p>{currService.info}</p>
         </div>
       </div>
-      <div className="services-carousel">{items}</div>
+      <div className="services-carousel">{items}</div> */}
     </div>
   );
 };

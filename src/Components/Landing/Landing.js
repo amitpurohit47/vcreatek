@@ -141,8 +141,10 @@ const Landing = () => {
       </div>
       <div className="why-choose-us">
         <h1 data-aos="flip-up">
-          Our team of expert advisors is here to understand your business needs
-          and help you find a solution.
+          <p>
+            Our team of expert advisors is here to understand your business needs
+            and help you find a solution.
+          </p>
         </h1>
         <Link to="/services">Know More</Link>
         <div className="landing-cards" data-aos="fade-up">
@@ -159,6 +161,7 @@ const Landing = () => {
                 Web Application Development
               </Link>
             </h3>
+              <p data-aos="flip-up" data-aos-delay="300">Some Dummy Content to fill up space</p>
 
             {/* <p data-aos="flip-up" data-aos-delay="300">
               Up-to-the-minute reporting of key financial transactions
@@ -177,6 +180,7 @@ const Landing = () => {
                 Data & Cloud Services
               </Link>
             </h3>
+              <p data-aos="flip-up" data-aos-delay="300">Some Dummy Content to fill up space</p>
 
             {/* <p data-aos="flip-up" data-aos-delay="300">
               Up-to-the-minute reporting of key financial transactions
@@ -195,6 +199,7 @@ const Landing = () => {
                 Design Studio
               </Link>
             </h3>
+              <p data-aos="flip-up" data-aos-delay="300">Some Dummy Content to fill up space</p>
 
             {/* <p data-aos="flip-up" data-aos-delay="300">
               Smart blend of Technology and Market Research
@@ -213,6 +218,7 @@ const Landing = () => {
                 Research & Lab
               </Link>
             </h3>
+              <p data-aos="flip-up" data-aos-delay="300">Some Dummy Content to fill up space</p>
 
             {/* <p data-aos="flip-up" data-aos-delay="300">
               Increase Forecasting Accuracy and Sales Results
@@ -231,6 +237,7 @@ const Landing = () => {
                 Smart Analytics Services
               </Link>
             </h3>
+              <p data-aos="flip-up" data-aos-delay="300">Some Dummy Content to fill up space</p>
 
             {/* <p data-aos="flip-up" data-aos-delay="300">
               Customized for business and the specific KPI’s driving the

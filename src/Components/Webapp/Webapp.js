@@ -6,6 +6,7 @@ import Hero from "../Landing/Hero/Hero";
 // import maintenance from "../../Assets/Images/maintenance.png";
 // import agile from "../../Assets/Images/agile.png";
 // import api from "../../Assets/Images/api.png";
+import smart from "../../Assets/Images/smart-data.png";
 import "./Webapp.css";
 
 const Webapp = () => {
@@ -22,9 +23,60 @@ const Webapp = () => {
           "Full Stack Development",
           "Application Support & Maintenance",
           "Testing & Automation",
-          "Integration & API Development"
+          "Integration & API Development",
         ]}
       />
+      <div className="web-app-services">
+        <div className="web-service">
+          <div className="web-service-info">
+            <img src={smart} alt="web-service" />
+            <h3>
+              <p>
+                We provide Full Stack Development Services on various
+                technologies including Angular, React, Dot Net, Python, and Java
+              </p>
+            </h3>
+          </div>
+          <h1>Full Stack Development</h1>
+        </div>
+        <div className="web-service">
+          <div className="web-service-info">
+            <img src={smart} alt="web-service" />
+            <h3>
+              <p>
+                We provide Application Support & Maintenance Services on various
+                technologies including Angular, React, Dot Net, Python, and Java
+              </p>
+            </h3>
+          </div>
+          <h1>Application Support & Maintenance</h1>
+        </div>
+        <div className="web-service">
+          <div className="web-service-info">
+            <img src={smart} alt="web-service" />
+            <h3>
+              <p>
+                Simplify your business with our Testing and Automation Services.
+                We provide Testing & Automation Services using Selenium.
+              </p>
+            </h3>
+          </div>
+          <h1>Testing & Automation</h1>
+        </div>
+        <div className="web-service">
+          <div className="web-service-info">
+            <img src={smart} alt="web-service" />
+            <h3>
+              <p>
+                Our team of expert API Developers uses latest technologies
+                including Angular, React, Dot Net, Python, Note JS, Dot Net API,
+                and Java.
+              </p>
+            </h3>
+          </div>
+          <h1>Integration & API Development</h1>
+        </div>
+      </div>
       {/* <div className="web-app1">
         <div className="web-app1-left">
           <h1>Web Application Services</h1>
